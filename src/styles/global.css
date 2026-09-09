@@ -1698,6 +1698,15 @@ body.menu-open {
     grid-template-columns: 1fr;
   }
 
+  .testimonials-section .testimonial-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .testimonials-section .testimonial-card {
+    grid-column: auto;
+    min-width: 0;
+  }
+
   .testimonial-card,
   .testimonial-card:last-child {
     min-height: 270px;
