@@ -722,7 +722,6 @@ summary:focus-visible {
   padding: 34px 35px 30px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  transition: background .32s cubic-bezier(.22, .61, .36, 1), transform .32s cubic-bezier(.22, .61, .36, 1), box-shadow .32s ease;
 }
 
 .service-card:nth-child(3n) {
@@ -738,12 +737,6 @@ summary:focus-visible {
 .service-card:last-child>div,
 .service-card:last-child>a {
   max-width: 700px;
-}
-
-.service-card:hover {
-  background: rgba(23, 21, 16, .035);
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(23, 21, 16, .08);
 }
 
 .service-number {
