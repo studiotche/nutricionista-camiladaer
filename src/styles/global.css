@@ -1320,7 +1320,16 @@ summary:focus-visible {
   color: rgba(255, 255, 255, .65);
 }
 
-.footer-main div {
+.footer-brand {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-main > .footer-links {
+  grid-column: 3;
   text-align: right;
   font-size: .85rem;
 }
@@ -1785,7 +1794,12 @@ body.menu-open {
     gap: 26px;
   }
 
-  .footer-main div {
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-main > .footer-links {
+    grid-column: auto;
     text-align: left;
   }
 

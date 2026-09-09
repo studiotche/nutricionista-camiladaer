@@ -545,15 +545,20 @@ const jsonLd = {
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-main logo">
-      <img
-        src={asset(site.assets.logo)}
-        alt={`${site.role} ${site.name}`}
-        width="205"
-        height="65"
-      /><p>Atendimento nutricional particular em Novo Hamburgo, RS.</p><div
-        class="footer-links"
-      >
+    <div class="container footer-main">
+      <div class="footer-brand logo">
+        <img
+          src={asset(site.assets.logo)}
+          alt={`${site.role} ${site.name}`}
+          width="205"
+          height="65"
+        />
+        <p>
+          Atendimento nutricional particular<br />
+          em Novo Hamburgo, RS.
+        </p>
+      </div>
+      <div class="footer-links">
         <a href={site.telLink}>Ligar: {site.phoneDisplay}</a><a
           href={site.instagram}
           target="_blank"
