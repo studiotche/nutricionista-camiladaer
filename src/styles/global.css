@@ -356,13 +356,6 @@ summary:focus-visible {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-copy {
-    opacity: 1;
-    transform: none;
-    animation: none;
-  }
-}
 
 .eyebrow {
   margin: 0 0 18px;
@@ -608,12 +601,6 @@ summary:focus-visible {
   transition-duration: .8s;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .about-frame img {
-    transform: none;
-    transition: none;
-  }
-}
 
 .signature-card {
   position: absolute;
