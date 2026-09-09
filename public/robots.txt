@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: substituir pelo domínio final antes da publicação.
 Sitemap: https://studiotche.github.io/nutricionista-saraknorst/sitemap-index.xml

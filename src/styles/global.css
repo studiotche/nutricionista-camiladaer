@@ -709,6 +709,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--line);
+  border-inline: 1px solid var(--line);
 }
 
 .service-card {
@@ -973,6 +974,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-block: 1px solid var(--line);
+  border-inline: 1px solid var(--line);
 }
 
 .location-card {
@@ -1258,7 +1260,6 @@ summary:focus-visible {
   border-radius: 5px;
   overflow: hidden;
   background: var(--sage-tint);
-  box-shadow: var(--shadow);
 }
 
 .map-frame iframe {

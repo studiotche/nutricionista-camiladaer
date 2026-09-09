@@ -1,12 +1,13 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import { site } from "./src/data/site";
 
-const pagesBase = process.env.PAGES_BASE;
+// Base do GitHub Pages. O sitemap usa origem + base, por isso o subpath
+// vai no `base` (e não embutido no `site`) — assim todo build gera sitemap certo.
+const pagesBase = process.env.PAGES_BASE ?? "/nutricionista-saraknorst/";
 
 export default defineConfig({
-  site: pagesBase ? "https://studiotche.github.io" : site.seo.url,
-  base: pagesBase || "/",
+  site: "https://studiotche.github.io",
+  base: pagesBase,
   output: "static",
   integrations: [sitemap()],
   build: { format: "directory" },
