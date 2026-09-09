@@ -641,9 +641,6 @@ const jsonLd = {
 
   const faqItems =
     document.querySelectorAll<HTMLDetailsElement>(".faq-list details");
-  const reduceMotionFaq = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
-  ).matches;
   const faqTimeouts = new WeakMap<HTMLDetailsElement, number>();
   const FAQ_DURATION = 560;
 
@@ -667,25 +664,10 @@ const jsonLd = {
     );
   };
 
-  const forceCloseFaq = (details: HTMLDetailsElement) => {
-    clearFaqTimeout(details);
-    const answer = details.querySelector<HTMLElement>(".faq-answer");
-    if (answer) {
-      answer.style.height = "";
-      answer.style.opacity = "";
-    }
-    details.classList.remove("is-closing");
-    details.removeAttribute("open");
-  };
-
   const animatedCloseFaq = (details: HTMLDetailsElement) => {
     const answer = details.querySelector<HTMLElement>(".faq-answer");
     if (!details.open || !answer || details.classList.contains("is-closing"))
       return;
-    if (reduceMotionFaq) {
-      forceCloseFaq(details);
-      return;
-    }
     details.classList.add("is-closing");
     answer.style.height = `${answer.offsetHeight}px`;
     answer.style.opacity = "1";
@@ -707,10 +689,6 @@ const jsonLd = {
   const animatedOpenFaq = (details: HTMLDetailsElement) => {
     const answer = details.querySelector<HTMLElement>(".faq-answer");
     if (!answer || details.open) return;
-    if (reduceMotionFaq) {
-      details.setAttribute("open", "");
-      return;
-    }
     details.classList.remove("is-closing");
     details.setAttribute("open", "");
     answer.style.height = "0px";
@@ -730,7 +708,7 @@ const jsonLd = {
         clearFaqTimeout(details);
         details.classList.remove("is-closing");
         const answer = details.querySelector<HTMLElement>(".faq-answer");
-        if (answer && !reduceMotionFaq) {
+        if (answer) {
           answer.style.height = `${answer.scrollHeight}px`;
           answer.style.opacity = "1";
           finishOpenFaq(details, answer);

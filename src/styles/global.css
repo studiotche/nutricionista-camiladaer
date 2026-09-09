@@ -1726,16 +1726,3 @@ body.menu-open {
     font-size: clamp(1.5rem, 7vw, 2.1rem);
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    transition-duration: .01ms !important;
-    animation-duration: .01ms !important;
-  }
-}
