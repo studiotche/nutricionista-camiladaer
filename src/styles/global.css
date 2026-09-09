@@ -149,7 +149,7 @@ a {
   width: 0;
   height: 1px;
   background: var(--terracotta);
-  transition: width .45s cubic-bezier(.22, .61, .36, 1);
+  transition: width .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .desktop-nav a:hover::after,
@@ -170,7 +170,7 @@ a {
   background: var(--paper);
   cursor: pointer;
   padding: 0;
-  transition: background .4s ease, border-color .4s ease, transform .45s cubic-bezier(.22, .61, .36, 1);
+  transition: background .28s ease, border-color .28s ease, transform .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .hamburger:hover {
@@ -208,7 +208,7 @@ a {
   font-weight: 600;
   cursor: pointer;
   will-change: transform;
-  transition: transform .45s cubic-bezier(.22, .61, .36, 1), background .45s cubic-bezier(.22, .61, .36, 1), color .35s ease, border-color .45s ease;
+  transition: transform .28s cubic-bezier(.22, .61, .36, 1), background .28s cubic-bezier(.22, .61, .36, 1), color .25s ease, border-color .28s ease;
 }
 
 .button:hover {
@@ -256,7 +256,7 @@ summary:focus-visible {
   border-bottom: 1px solid rgba(61, 107, 82, .4);
   padding-block: 6px;
   font-weight: 600;
-  transition: color .4s ease, border-color .4s ease, gap .45s cubic-bezier(.22, .61, .36, 1);
+  transition: color .28s ease, border-color .28s ease, gap .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .text-link:hover {
@@ -274,7 +274,7 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform .45s cubic-bezier(.22, .61, .36, 1);
+  transition: transform .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .button:hover span {
@@ -700,7 +700,7 @@ summary:focus-visible {
   padding: 34px 35px 30px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  transition: background .5s cubic-bezier(.22, .61, .36, 1), transform .5s cubic-bezier(.22, .61, .36, 1), box-shadow .5s ease;
+  transition: background .32s cubic-bezier(.22, .61, .36, 1), transform .32s cubic-bezier(.22, .61, .36, 1), box-shadow .32s ease;
 }
 
 .service-card:nth-child(3n) {
@@ -748,7 +748,7 @@ summary:focus-visible {
   border-bottom: 1px solid var(--line);
   font-size: .87rem;
   font-weight: 600;
-  transition: color .4s ease, border-color .4s ease;
+  transition: color .28s ease, border-color .28s ease;
 }
 
 .service-card a:hover {
@@ -967,7 +967,7 @@ summary:focus-visible {
   color: var(--ink);
   font-weight: 600;
   border-bottom: 1px solid var(--line);
-  transition: color .4s ease, border-color .4s ease;
+  transition: color .28s ease, border-color .28s ease;
 }
 
 .locations-actions p a:hover {
@@ -995,7 +995,7 @@ summary:focus-visible {
 
 .faq-list details {
   border-bottom: 1px solid var(--line);
-  transition: background .5s ease;
+  transition: background .35s ease;
 }
 
 .faq-list details:hover {
@@ -1013,7 +1013,7 @@ summary:focus-visible {
   border-radius: 6px;
   font-family: var(--display);
   font-weight: 600;
-  transition: color .4s ease, background .45s ease, padding-left .45s cubic-bezier(.22, .61, .36, 1);
+  transition: color .3s ease, background .3s ease, padding-left .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .faq-list summary:hover {
@@ -1037,7 +1037,7 @@ summary:focus-visible {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1;
-  transition: transform .55s cubic-bezier(.22, .61, .36, 1), background .4s ease, border-color .4s ease;
+  transition: transform .38s cubic-bezier(.22, .61, .36, 1), background .3s ease, border-color .3s ease;
 }
 
 .faq-list summary:hover span {
@@ -1057,7 +1057,7 @@ summary:focus-visible {
   overflow: hidden;
   opacity: 1;
   padding-inline: 20px 44px;
-  transition: height .55s cubic-bezier(.22, .61, .36, 1), opacity .45s ease;
+  transition: height .42s cubic-bezier(.22, .61, .36, 1), opacity .32s ease;
 }
 
 .faq-answer > p {
@@ -1110,7 +1110,7 @@ summary:focus-visible {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, .4);
   text-underline-offset: 4px;
-  transition: color .4s ease, text-decoration-color .4s ease;
+  transition: color .28s ease, text-decoration-color .28s ease;
 }
 
 .contact-details .contact-tel:hover {
@@ -1228,7 +1228,7 @@ summary:focus-visible {
 
 .footer-links a {
   color: rgba(255, 255, 255, .65);
-  transition: color .4s ease, padding-left .45s cubic-bezier(.22, .61, .36, 1);
+  transition: color .28s ease, padding-left .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .footer-links a:hover {
@@ -1263,7 +1263,7 @@ summary:focus-visible {
   z-index: 40;
   right: 24px;
   bottom: 24px;
-  transition: transform .45s cubic-bezier(.22, .61, .36, 1), filter .45s ease;
+  transition: transform .3s cubic-bezier(.22, .61, .36, 1), filter .3s ease;
   will-change: transform;
 }
 
@@ -1344,7 +1344,7 @@ body.menu-open {
   color: var(--ink);
   font-size: 1.05rem;
   cursor: pointer;
-  transition: background .4s ease, transform .45s cubic-bezier(.22, .61, .36, 1);
+  transition: background .28s ease, transform .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .menu-close:hover {
@@ -1393,7 +1393,7 @@ body.menu-open {
   content: "→";
   color: var(--terracotta-deep);
   font-size: .95rem;
-  transition: transform .45s cubic-bezier(.22, .61, .36, 1);
+  transition: transform .3s cubic-bezier(.22, .61, .36, 1);
 }
 
 .mobile-nav a:hover::after,

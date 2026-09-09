@@ -642,7 +642,7 @@ const jsonLd = {
   const faqItems =
     document.querySelectorAll<HTMLDetailsElement>(".faq-list details");
   const faqTimeouts = new WeakMap<HTMLDetailsElement, number>();
-  const FAQ_DURATION = 560;
+  const FAQ_DURATION = 430;
 
   const clearFaqTimeout = (details: HTMLDetailsElement) => {
     const timeout = faqTimeouts.get(details);
