@@ -30,18 +30,17 @@ export const site = {
   seo: {
     title: "Nutricionista em Novo Hamburgo | Camila Daer · Mulheres, Menopausa e Emagrecimento",
     description:
-      "Camila Daer, nutricionista e gastróloga em Novo Hamburgo/RS. Nutrição personalizada para mulheres, menopausa, emagrecimento e bem-estar — sem restrições extremas. Agende pelo WhatsApp.",
+      "Camila Daer, nutricionista e gastróloga em Novo Hamburgo/RS. Nutrição personalizada para mulheres, menopausa, emagrecimento e bem-estar, sem restrições extremas. Agende pelo WhatsApp.",
     url: "https://studiotche.github.io/nutricionista-camiladaer/",
     ogImage: "/images/camila_daer_nutricionista.webp",
   },
   hero: {
-    eyebrow: "Atendimento particular em Novo Hamburgo",
-    title: "Comer bem pode ser leve, gostoso e possível.",
-    titleHighlight: "leve, gostoso e possível.",
-    tagline:
-      "Nutrição personalizada para cuidar da sua saúde, da sua rotina e da sua relação com a comida.",
+    eyebrow: "Nutrição para mulheres",
+    title: "Nutricionista e gastróloga em Novo Hamburgo",
+    titleHighlight: "em Novo Hamburgo",
+    tagline: "Comer bem pode ser leve, gostoso e possível.",
     description:
-      "Sou nutricionista e gastróloga. Meu atendimento é individualizado, respeitando sua rotina, suas preferências e seus objetivos — sem dietas extremamente restritivas e sem culpa.",
+      "Cuidado individual para sua saúde, sua rotina e sua relação com a comida.",
   },
   about: {
     eyebrow: "Olá, eu sou a Camila!",
@@ -49,7 +48,7 @@ export const site = {
     titleHighlight: "relação leve com a comida",
     paragraphs: [
       "Acredito que uma alimentação saudável precisa ser possível, prazerosa e adaptada à realidade de cada pessoa.",
-      "Meu atendimento é individualizado: juntas, construímos estratégias práticas e sustentáveis para emagrecimento, menopausa, bem-estar e saúde intestinal — respeitando sua rotina, suas preferências e seus objetivos.",
+      "Meu atendimento é individualizado: juntas, construímos estratégias práticas e sustentáveis para emagrecimento, menopausa, bem-estar e saúde intestinal, respeitando sua rotina, suas preferências e seus objetivos.",
       "Nada de fórmulas prontas ou extremismos: unindo nutrição e gastronomia, o plano cabe na vida real e no prazer de comer bem.",
     ],
   },
@@ -69,7 +68,7 @@ export const specialties = [
     title: "Emagrecimento",
     text: "Estratégias práticas e sustentáveis para emagrecer sem restrições extremas, respeitando sua rotina e seu paladar.",
     detail:
-      "Avaliação completa, metas realistas e ajustes ao longo do acompanhamento — com comida de verdade e sem culpa.",
+      "Avaliação completa, metas realistas e ajustes ao longo do acompanhamento, com comida de verdade e sem culpa.",
   },
   {
     number: "02",
@@ -81,7 +80,7 @@ export const specialties = [
   {
     number: "03",
     title: "Bem-estar e saúde intestinal",
-    text: "Organização da rotina alimentar para mais disposição, leveza e equilíbrio — incluindo atenção à saúde intestinal.",
+    text: "Organização da rotina alimentar para mais disposição, leveza e equilíbrio, incluindo atenção à saúde intestinal.",
     detail:
       "Orientações práticas e possíveis, com trocas e adaptações que você consegue manter no dia a dia.",
   },
@@ -94,7 +93,7 @@ export const pillars = [
   ],
   [
     "Planejar",
-    "Plano individualizado e prático, sem dietas extremamente restritivas — com estratégias que cabem na vida real.",
+    "Plano individualizado e prático, sem dietas extremamente restritivas, com estratégias que cabem na vida real.",
   ],
   [
     "Acompanhar",
@@ -170,7 +169,7 @@ export const faqs = [
   ],
   [
     "O acompanhamento é personalizado?",
-    "Sim. Cada plano é construído a partir da sua história, rotina, preferências e objetivos — sem dietas extremamente restritivas.",
+    "Sim. Cada plano é construído a partir da sua história, rotina, preferências e objetivos, sem dietas extremamente restritivas.",
   ],
   [
     "Como funciona a primeira consulta?",

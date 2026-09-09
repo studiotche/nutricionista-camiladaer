@@ -316,7 +316,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   padding: 86px 0;
-  background: var(--sage-dark);
+  background: var(--paper);
 }
 
 .hero-visual {
@@ -335,19 +335,6 @@ summary:focus-visible {
   height: 100%;
   object-fit: cover;
   object-position: 62% 50%;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(100deg, rgba(23, 21, 16, .88) 0%, rgba(23, 21, 16, .62) 42%, rgba(23, 21, 16, .18) 78%, rgba(23, 21, 16, .08) 100%);
-}
-
-.hero-overlay::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(23, 21, 16, .38) 0%, transparent 24%, transparent 62%, rgba(23, 21, 16, .55) 100%);
 }
 
 .hero-copy {
@@ -394,9 +381,8 @@ summary:focus-visible {
 
 .hero h1 {
   max-width: 620px;
-  color: var(--white);
+  color: var(--ink);
   font-size: clamp(2.75rem, 4vw, 3.6rem);
-  text-shadow: 0 2px 28px rgba(23, 21, 16, .35);
 }
 
 .highlight {
@@ -405,20 +391,16 @@ summary:focus-visible {
 
 .hero h1 .highlight,
 .about-copy h2 .highlight {
-  color: var(--terracotta-light);
+  color: var(--terracotta-deep);
 }
 
 .contact-card h2 .highlight {
   color: var(--sage-tint);
 }
 
-.hero .lead {
-  color: rgba(255, 255, 255, .88);
-}
-
 .hero-tagline {
   margin: 20px 0 0;
-  color: var(--gold);
+  color: var(--ink);
   font-family: var(--serif);
   font-size: clamp(1.3rem, 1.9vw, 1.55rem);
   line-height: 1.25;
@@ -443,24 +425,11 @@ summary:focus-visible {
   border-color: var(--sage);
 }
 
-.hero .text-link {
-  color: var(--white);
-  border-bottom-color: rgba(255, 255, 255, .5);
-}
-
-.hero .text-link span {
-  color: var(--sage-tint);
-}
-
 .hero-actions {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
-}
-
-.hero .location-note {
-  color: rgba(255, 255, 255, .8);
 }
 
 .location-note {
@@ -1603,7 +1572,7 @@ body.menu-open {
     display: block;
     min-height: 0;
     padding: 0;
-    background: var(--sage-dark);
+    background: var(--paper);
   }
 
   .hero-visual {
@@ -1611,10 +1580,6 @@ body.menu-open {
     inset: auto;
     width: min(100% - 34px, 620px);
     margin-inline: auto;
-  }
-
-  .hero-overlay {
-    display: none;
   }
 
   .hero-bg {
