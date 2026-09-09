@@ -10,8 +10,10 @@ import {
   whatsappUrl,
 } from "../data/site";
 
-const asset = (path: string) =>
-  `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+const base = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const asset = (path: string) => `${base}${path.replace(/^\//, "")}`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -22,7 +24,7 @@ const jsonLd = {
       name: `${site.role} ${site.name}`,
       jobTitle: site.role,
       url: site.seo.url,
-      image: `${site.seo.url}/images/nutricionista-ivoti-hero-sara.webp`,
+      image: `${site.seo.url.replace(/\/$/, "")}/images/nutricionista-ivoti-hero-sara.webp`,
       telephone: `+${site.phoneLink}`,
       sameAs: [site.googleProfile, site.instagram],
       areaServed: ["Ivoti", "Atendimento online"],
@@ -42,7 +44,7 @@ const jsonLd = {
       "@type": "MedicalBusiness",
       "@id": `${site.seo.url}/#medicalbusiness`,
       name: `${site.role} ${site.name}`,
-      image: `${site.seo.url}/images/nutricionista-ivoti-hero-sara.webp`,
+      image: `${site.seo.url.replace(/\/$/, "")}/images/nutricionista-ivoti-hero-sara.webp`,
       telephone: `+${site.phoneLink}`,
       priceRange: "$$",
       medicalSpecialty: "Nutrition",
