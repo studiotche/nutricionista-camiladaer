@@ -57,8 +57,7 @@ export const site = {
     logo: "/imagens/logo-camiladaer.svg",
     hero: "/images/camila_daer_nutricionista.webp",
     heroMobile: "/images/camila_daer.webp",
-    about: "/images/camila_daer.webp",
-    fachada: "/images/camila_daer_fachada.webp",
+    about: "/imagens/camila-daer-sobre.jpg",
     processBg: "/imagens/camila-daer-consultorio.jpg",
   },
 } as const;

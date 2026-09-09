@@ -1,0 +1,265 @@
+- generic [active] [ref=e1]:
+  - link "Ir para o conteúdo" [ref=e2] [cursor=pointer]:
+    - /url: "#conteudo"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Camila Daer, início" [ref=e5] [cursor=pointer]:
+        - /url: "#inicio"
+        - img "Nutricionista Camila Daer" [ref=e6]
+      - link "Agendar consulta" [ref=e7] [cursor=pointer]:
+        - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+      - button "Abrir menu" [ref=e8] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - img "Nutricionista Camila Daer sorrindo, atendimento particular em Novo Hamburgo" [ref=e16]
+        - generic [ref=e17]:
+          - generic [ref=e18]: Cuidado individual
+          - strong [ref=e19]: Sem fórmulas prontas.
+      - generic [ref=e21]:
+        - paragraph [ref=e22]: Atendimento particular em Novo Hamburgo
+        - heading "Comer bem pode ser leve, gostoso e possível." [level=1] [ref=e23]
+        - paragraph [ref=e24]: Nutrição personalizada para cuidar da sua saúde, da sua rotina e da sua relação com a comida.
+        - paragraph [ref=e25]: Sou nutricionista e gastróloga. Meu atendimento é individualizado, respeitando sua rotina, suas preferências e seus objetivos — sem dietas extremamente restritivas e sem culpa.
+        - generic [ref=e26]:
+          - link "Agendar minha consulta" [ref=e27] [cursor=pointer]:
+            - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+            - text: Agendar minha consulta
+            - generic [aria-hidden] [ref=e28]: ↗
+          - link "Como posso ajudar" [ref=e29] [cursor=pointer]:
+            - /url: "#atendimentos"
+            - text: Como posso ajudar
+            - generic [aria-hidden] [ref=e30]: ↓
+        - generic [ref=e31]: Presencial em Novo Hamburgo · Particular
+    - region "Diferenciais do atendimento" [ref=e34]:
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: 01 Escuta sem julgamentos
+        - paragraph [ref=e37]: 02 Estratégias personalizadas
+        - paragraph [ref=e38]: 03 Atendimento particular
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - paragraph [ref=e43]: Posso ajudar você
+          - heading "Cuidado nutricional para diferentes momentos da vida" [level=2] [ref=e44]
+        - paragraph [ref=e45]: Cada acompanhamento começa pela sua história e respeita o diagnóstico e os tratamentos conduzidos por outros profissionais.
+      - generic [ref=e46]:
+        - article [ref=e47]:
+          - generic [ref=e48]: "01"
+          - generic [ref=e49]:
+            - heading "Emagrecimento" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Estratégias práticas e sustentáveis para emagrecer sem restrições extremas, respeitando sua rotina e seu paladar.
+            - paragraph [ref=e52]: Avaliação completa, metas realistas e ajustes ao longo do acompanhamento — com comida de verdade e sem culpa.
+          - link "Saber mais sobre emagrecimento" [ref=e53] [cursor=pointer]:
+            - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+            - text: Saber mais ↗
+        - article [ref=e54]:
+          - generic [ref=e55]: "02"
+          - generic [ref=e56]:
+            - heading "Menopausa e saúde da mulher" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Cuidado nutricional para mulheres em diferentes fases, com atenção a sintomas, energia e qualidade de vida na menopausa.
+            - paragraph [ref=e59]: Plano individualizado que considera histórico, exames e rotina, unindo nutrição e gastronomia para mais bem-estar.
+          - link "Saber mais sobre menopausa e saúde da mulher" [ref=e60] [cursor=pointer]:
+            - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+            - text: Saber mais ↗
+        - article [ref=e61]:
+          - generic [ref=e62]: "03"
+          - generic [ref=e63]:
+            - heading "Bem-estar e saúde intestinal" [level=3] [ref=e64]
+            - paragraph [ref=e65]: Organização da rotina alimentar para mais disposição, leveza e equilíbrio — incluindo atenção à saúde intestinal.
+            - paragraph [ref=e66]: Orientações práticas e possíveis, com trocas e adaptações que você consegue manter no dia a dia.
+          - link "Saber mais sobre bem-estar e saúde intestinal" [ref=e67] [cursor=pointer]:
+            - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+            - text: Saber mais ↗
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Abordagem integrada
+        - heading "Três pilares para cuidar de você por inteiro" [level=2] [ref=e73]
+        - paragraph [ref=e74]: A alimentação não acontece isolada da vida. Por isso, o acompanhamento considera o que você come, como organiza seus hábitos e como se relaciona com a comida.
+        - link "Iniciar meu acompanhamento" [ref=e75] [cursor=pointer]:
+          - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+          - text: Iniciar meu acompanhamento
+          - generic [aria-hidden] [ref=e76]: ↗
+      - list [ref=e77]:
+        - listitem [ref=e78]:
+          - generic [ref=e79]: "01"
+          - generic [ref=e80]:
+            - heading "Conhecer" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Escuta atenta da sua história, rotina, preferências e objetivos para entender o que faz sentido para você.
+        - listitem [ref=e83]:
+          - generic [ref=e84]: "02"
+          - generic [ref=e85]:
+            - heading "Planejar" [level=3] [ref=e86]
+            - paragraph [ref=e87]: Plano individualizado e prático, sem dietas extremamente restritivas — com estratégias que cabem na vida real.
+        - listitem [ref=e88]:
+          - generic [ref=e89]: "03"
+          - generic [ref=e90]:
+            - heading "Acompanhar" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Ajustes contínuos e apoio próximo para evoluir com constância, sem culpa e com mais prazer ao comer.
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - paragraph [ref=e97]: Transformando vidas
+          - heading "Experiências de quem já começou" [level=2] [ref=e98]
+        - generic [ref=e99]:
+          - paragraph [ref=e100]: Relatos de pacientes sobre o cuidado recebido durante o acompanhamento nutricional.
+          - link "Avaliação 5,0 de 5 em 10 avaliações no Google" [ref=e101] [cursor=pointer]:
+            - /url: https://www.google.com/maps/place/Nutricionista+Camila+Daer/@-29.6797581,-51.1306469,17z/data=!4m6!3m5!1s0x95194373e39be22d:0x7472dd2ea6e1cddf!8m2!3d-29.6797581!4d-51.1306469!16s%2Fg%2F11y13xyxgl?entry=ttu
+            - strong [ref=e107]: 5,0
+            - generic [ref=e119]: 10 avaliações
+      - generic [ref=e120]:
+        - figure [ref=e121]:
+          - generic [aria-hidden] [ref=e122]: “
+          - blockquote [ref=e123]: Ótimo atendimento, superou todas minhas espectativas super recomendo❤️
+          - generic [ref=e124]:
+            - strong [ref=e125]: Deivis Marcos
+            - time [ref=e126]: 09/06/2026
+        - figure [ref=e127]:
+          - generic [aria-hidden] [ref=e128]: “
+          - blockquote [ref=e129]: Posso dizer com total convicção que exerce a profissão com amor, responsabilidade e muito conhecimento. Cada atendimento é feito com atenção aos detalhes, buscando sempre entender o que realmente o paciente precisa, não apenas na alimentação, mas no estilo de vida como um todo.
+          - generic [ref=e130]:
+            - strong [ref=e131]: Thiago Daer
+            - time [ref=e132]: 09/05/2026
+        - figure [ref=e133]:
+          - generic [aria-hidden] [ref=e134]: “
+          - blockquote [ref=e135]: O atendimento da Camila foi excepcional! De uma atenção maravilhosa, teve empatia, foi atenciosa e com tudo isso associado ao profissionalismo dela com certeza vai refletir no resultado final que procuro!
+          - generic [ref=e136]:
+            - strong [ref=e137]: Silvia Sternberg
+            - time [ref=e138]: 09/11/2025
+        - figure [ref=e139]:
+          - generic [aria-hidden] [ref=e140]: “
+          - blockquote [ref=e141]: A nutri Camila, está fazendo eu enxergar de uma forma diferente “a dieta”, ou melhor, a reeducação alimentar! Sempre tive dificuldades e ela está me mostrando que não adianta fazer uma reeducação alimentar restritiva ou com extremismos e sim um momento de apreciar a comida de verdade, com trocas, com adaptações! Estou muito satisfeita, vai ter resultado muito bom!
+          - generic [ref=e142]:
+            - strong [ref=e143]: Cíntia Rodrigues
+            - time [ref=e144]: 09/11/2025
+        - figure [ref=e145]:
+          - generic [aria-hidden] [ref=e146]: “
+          - blockquote [ref=e147]: Excelente profissional, atenciosa e dedicada, demonstra profundo conhecimento e cuidado em cada orientação nutricional.
+          - generic [ref=e148]:
+            - strong [ref=e149]: Marcelo Andrade
+            - time [ref=e150]: 09/11/2025
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - img "Nutricionista Camila Daer em ambiente profissional com luz natural" [ref=e155]
+        - generic [aria-hidden] [ref=e156]:
+          - generic [ref=e157]: CD
+          - generic [ref=e158]: estratégia que cabe na sua vida
+      - generic [ref=e159]:
+        - paragraph [ref=e160]: Olá, eu sou a Camila!
+        - heading "Nutrição e gastronomia para uma relação leve com a comida" [level=2] [ref=e161]
+        - paragraph [ref=e162]: Acredito que uma alimentação saudável precisa ser possível, prazerosa e adaptada à realidade de cada pessoa.
+        - paragraph [ref=e163]: "Meu atendimento é individualizado: juntas, construímos estratégias práticas e sustentáveis para emagrecimento, menopausa, bem-estar e saúde intestinal — respeitando sua rotina, suas preferências e seus objetivos."
+        - paragraph [ref=e164]: "Nada de fórmulas prontas ou extremismos: unindo nutrição e gastronomia, o plano cabe na vida real e no prazer de comer bem."
+        - paragraph [ref=e165]: Nutricionista e Gastróloga · CFN 20977D RS
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - strong [ref=e168]: Consciência
+            - generic [ref=e169]: para entender suas escolhas
+          - generic [ref=e170]:
+            - strong [ref=e171]: Autonomia
+            - generic [ref=e172]: para cuidar de si com leveza
+        - link "Conversar com a nutricionista" [ref=e173] [cursor=pointer]:
+          - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+          - text: Conversar com a nutricionista
+          - generic [aria-hidden] [ref=e174]: ↗
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - paragraph [ref=e178]: Onde você pode me encontrar
+        - heading "Presencial em Novo Hamburgo, com a mesma atenção" [level=2] [ref=e179]
+      - article [ref=e181]:
+        - text: Presencial · Particular
+        - heading "Novo Hamburgo" [level=3] [ref=e182]
+        - paragraph [ref=e183]:
+          - strong [ref=e184]: Av. Pedro Adams Filho, 6000 · apto. 701
+          - generic [ref=e185]: Complexo Daer · Centro · Novo Hamburgo/RS · CEP 93510-050
+      - generic [ref=e186]:
+        - link "Abrir localização no Google" [ref=e187] [cursor=pointer]:
+          - /url: https://www.google.com/maps/place/Nutricionista+Camila+Daer/@-29.6797581,-51.1306469,17z/data=!4m6!3m5!1s0x95194373e39be22d:0x7472dd2ea6e1cddf!8m2!3d-29.6797581!4d-51.1306469!16s%2Fg%2F11y13xyxgl?entry=ttu
+          - text: Abrir localização no Google
+          - generic [aria-hidden] [ref=e188]: ↗
+        - paragraph [ref=e189]:
+          - text: "WhatsApp:"
+          - link "(51) 98130-9357" [ref=e190] [cursor=pointer]:
+            - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - paragraph [ref=e194]: Dúvidas frequentes
+        - heading "Antes de começar" [level=2] [ref=e195]
+        - paragraph [ref=e196]: Algumas respostas para deixar sua decisão mais tranquila.
+      - generic [ref=e197]:
+        - group [ref=e198]:
+          - generic "Onde acontecem as consultas presenciais?" [ref=e199] [cursor=pointer]
+          - paragraph [ref=e202]: Os atendimentos acontecem no Complexo Daer, Av. Pedro Adams Filho, 6000, apto. 701, Centro, Novo Hamburgo/RS, CEP 93510-050.
+        - group [ref=e203]:
+          - generic "Como faço para agendar?" [ref=e204] [cursor=pointer]
+        - group [ref=e206]:
+          - generic "Atende convênio?" [ref=e207] [cursor=pointer]
+        - group [ref=e209]:
+          - generic "Quais as formas de pagamento?" [ref=e210] [cursor=pointer]
+        - group [ref=e212]:
+          - generic "O acompanhamento é personalizado?" [ref=e213] [cursor=pointer]
+        - group [ref=e215]:
+          - generic "Como funciona a primeira consulta?" [ref=e216] [cursor=pointer]
+        - group [ref=e218]:
+          - generic "Preciso levar exames na primeira consulta?" [ref=e219] [cursor=pointer]
+        - group [ref=e221]:
+          - generic "Vocês atendem online?" [ref=e222] [cursor=pointer]
+    - generic [ref=e225]:
+      - generic [ref=e226]:
+        - paragraph [ref=e227]: Agende sua consulta
+        - heading "Sua transformação pode começar por uma conversa" [level=2] [ref=e228]
+      - generic [ref=e229]:
+        - paragraph [ref=e230]:
+          - generic [ref=e231]: Modalidade
+          - strong [ref=e232]: Presencial · Particular
+        - paragraph [ref=e233]:
+          - generic [ref=e234]: Pagamento
+          - strong [ref=e235]: PIX e dinheiro
+        - paragraph [ref=e236]:
+          - generic [ref=e237]: WhatsApp
+          - strong [ref=e238]: (51) 98130-9357
+        - paragraph [ref=e239]:
+          - generic [ref=e240]: Telefone
+          - strong [ref=e241]:
+            - link "(51) 98130-9357" [ref=e242] [cursor=pointer]:
+              - /url: tel:+5551981309357
+        - link "Falar com Camila" [ref=e243] [cursor=pointer]:
+          - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.
+          - text: Falar com Camila
+          - generic [aria-hidden] [ref=e244]: ↗
+    - generic [ref=e246]:
+      - generic [ref=e247]:
+        - paragraph [ref=e248]: Como chegar
+        - heading "Encontre o consultório para sua consulta" [level=2] [ref=e249]
+        - paragraph [ref=e250]: Os atendimentos acontecem no Complexo Daer, em Novo Hamburgo, com atenção individualizada e sem pressa.
+        - img "Fachada do Complexo Daer à noite, consultório da nutricionista Camila Daer em Novo Hamburgo" [ref=e252]
+        - list [ref=e253]:
+          - listitem [ref=e254]:
+            - generic [ref=e255]: Novo Hamburgo
+            - strong [ref=e256]: Av. Pedro Adams Filho, 6000 · apto. 701
+            - generic [ref=e257]: Complexo Daer · Centro · Novo Hamburgo/RS · CEP 93510-050
+        - link "Ver rotas no Google Maps" [ref=e258] [cursor=pointer]:
+          - /url: https://www.google.com/maps/place/Nutricionista+Camila+Daer/@-29.6797581,-51.1306469,17z
+          - text: Ver rotas no Google Maps
+          - generic [aria-hidden] [ref=e259]: ↗
+      - iframe [ref=e261]
+  - contentinfo [ref=e262]:
+    - generic [ref=e263]:
+      - img "Nutricionista Camila Daer" [ref=e264]
+      - paragraph [ref=e265]: Atendimento nutricional particular em Novo Hamburgo, RS.
+      - generic [ref=e266]:
+        - 'link "Ligar: (51) 98130-9357" [ref=e267] [cursor=pointer]':
+          - /url: tel:+5551981309357
+        - link "Instagram @nutricamiladaer" [ref=e268] [cursor=pointer]:
+          - /url: https://www.instagram.com/nutricamiladaer/
+        - link "Voltar ao início ↑" [ref=e269] [cursor=pointer]:
+          - /url: "#inicio"
+    - generic [ref=e270]:
+      - generic [ref=e271]: © 2026 Camila Daer · Nutricionista e Gastróloga · CFN 20977D RS
+      - generic [ref=e272]:
+        - img "Studio Tchê" [ref=e273]
+        - text: Desenvolvido por
+        - link "Studio Tchê" [ref=e274] [cursor=pointer]:
+          - /url: https://studiotche.com
+        - text: ©
+  - link "Olá, Camila! Gostaria de agendar uma consulta." [ref=e275] [cursor=pointer]:
+    - /url: https://wa.me/5551981309357?text=Ol%C3%A1%2C%20Camila!%20Gostaria%20de%20agendar%20uma%20consulta.

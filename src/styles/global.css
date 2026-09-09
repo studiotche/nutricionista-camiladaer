@@ -727,14 +727,7 @@ summary:focus-visible {
 }
 
 .service-card:last-child {
-  grid-column: span 2;
-  min-height: 280px;
   border-right: 0;
-}
-
-.service-card:last-child>div,
-.service-card:last-child>a {
-  max-width: 700px;
 }
 
 .service-number {
@@ -921,9 +914,8 @@ summary:focus-visible {
   border: 1px solid rgba(23, 21, 16, .08);
 }
 
-.testimonial-card:last-child {
-  grid-column: 1 / -1;
-  min-height: 250px;
+.testimonial-card:nth-child(4) {
+  grid-column: span 2;
 }
 
 .quote-mark {
@@ -1262,13 +1254,6 @@ summary:focus-visible {
   background: var(--sage-tint);
 }
 
-.fachada-frame {
-  border-radius: 5px;
-  aspect-ratio: 16 / 10;
-  margin: 0 0 28px;
-  max-width: 480px;
-}
-
 .map-frame iframe {
   display: block;
   width: 100%;
@@ -1547,8 +1532,12 @@ body.menu-open {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .testimonial-card:last-child {
+  .testimonial-card:nth-child(4) {
     grid-column: auto;
+  }
+
+  .testimonial-card:last-child {
+    grid-column: span 2;
     min-height: 310px;
   }
 
