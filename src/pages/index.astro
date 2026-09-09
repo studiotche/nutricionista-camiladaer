@@ -645,10 +645,26 @@ const jsonLd = {
     "(prefers-reduced-motion: reduce)"
   ).matches;
   const faqTimeouts = new WeakMap<HTMLDetailsElement, number>();
+  const FAQ_DURATION = 560;
 
   const clearFaqTimeout = (details: HTMLDetailsElement) => {
     const timeout = faqTimeouts.get(details);
     if (timeout !== undefined) window.clearTimeout(timeout);
+  };
+
+  const finishOpenFaq = (
+    details: HTMLDetailsElement,
+    answer: HTMLElement
+  ) => {
+    clearFaqTimeout(details);
+    faqTimeouts.set(
+      details,
+      window.setTimeout(() => {
+        if (details.open && !details.classList.contains("is-closing")) {
+          answer.style.height = "auto";
+        }
+      }, FAQ_DURATION)
+    );
   };
 
   const forceCloseFaq = (details: HTMLDetailsElement) => {
@@ -671,7 +687,7 @@ const jsonLd = {
       return;
     }
     details.classList.add("is-closing");
-    answer.style.height = `${answer.scrollHeight}px`;
+    answer.style.height = `${answer.offsetHeight}px`;
     answer.style.opacity = "1";
     void answer.offsetHeight;
     answer.style.height = "0px";
@@ -684,7 +700,7 @@ const jsonLd = {
         details.classList.remove("is-closing");
         answer.style.height = "";
         answer.style.opacity = "";
-      }, 560)
+      }, FAQ_DURATION)
     );
   };
 
@@ -695,19 +711,14 @@ const jsonLd = {
       details.setAttribute("open", "");
       return;
     }
+    details.classList.remove("is-closing");
     details.setAttribute("open", "");
     answer.style.height = "0px";
     answer.style.opacity = "0";
     void answer.offsetHeight;
     answer.style.height = `${answer.scrollHeight}px`;
     answer.style.opacity = "1";
-    clearFaqTimeout(details);
-    faqTimeouts.set(
-      details,
-      window.setTimeout(() => {
-        answer.style.height = "auto";
-      }, 560)
-    );
+    finishOpenFaq(details, answer);
   };
 
   faqItems.forEach((details) => {
@@ -718,7 +729,12 @@ const jsonLd = {
       if (details.classList.contains("is-closing")) {
         clearFaqTimeout(details);
         details.classList.remove("is-closing");
-        animatedOpenFaq(details);
+        const answer = details.querySelector<HTMLElement>(".faq-answer");
+        if (answer && !reduceMotionFaq) {
+          answer.style.height = `${answer.scrollHeight}px`;
+          answer.style.opacity = "1";
+          finishOpenFaq(details, answer);
+        }
         return;
       }
       if (details.open) {

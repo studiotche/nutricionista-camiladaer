@@ -208,19 +208,17 @@ a {
   font-weight: 600;
   cursor: pointer;
   will-change: transform;
-  transition: transform .45s cubic-bezier(.22, .61, .36, 1), background .45s cubic-bezier(.22, .61, .36, 1), color .35s ease, border-color .45s ease, box-shadow .45s ease;
+  transition: transform .45s cubic-bezier(.22, .61, .36, 1), background .45s cubic-bezier(.22, .61, .36, 1), color .35s ease, border-color .45s ease;
 }
 
 .button:hover {
   transform: translateY(-3px);
   background: var(--sage-dark);
   border-color: var(--sage-dark);
-  box-shadow: 0 14px 30px rgba(4, 73, 37, .22);
 }
 
 .button:active {
   transform: translateY(-1px) scale(.98);
-  box-shadow: 0 6px 16px rgba(4, 73, 37, .18);
   transition-duration: .15s;
 }
 
@@ -246,7 +244,6 @@ summary:focus-visible {
 .button-light:hover {
   background: var(--paper);
   border-color: var(--paper);
-  box-shadow: 0 14px 30px rgba(23, 21, 16, .18);
 }
 
 .text-link {
@@ -1012,8 +1009,7 @@ summary:focus-visible {
   gap: 20px;
   cursor: pointer;
   list-style: none;
-  padding: 25px 8px;
-  margin-inline: -8px;
+  padding: 25px 20px;
   border-radius: 6px;
   font-family: var(--display);
   font-weight: 600;
@@ -1022,7 +1018,7 @@ summary:focus-visible {
 
 .faq-list summary:hover {
   color: var(--sage-dark);
-  padding-left: 12px;
+  padding-left: 24px;
 }
 
 .faq-list summary::-webkit-details-marker {
@@ -1060,12 +1056,14 @@ summary:focus-visible {
 .faq-answer {
   overflow: hidden;
   opacity: 1;
+  padding-inline: 20px 44px;
   transition: height .55s cubic-bezier(.22, .61, .36, 1), opacity .45s ease;
 }
 
 .faq-answer > p {
   max-width: 680px;
-  margin: 0 44px 25px 0;
+  margin: 0;
+  padding: 4px 0 28px;
   color: var(--muted);
 }
 
