@@ -342,6 +342,53 @@ summary:focus-visible {
   z-index: 2;
 }
 
+@keyframes hero-copy-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-copy > * {
+  opacity: 0;
+  animation: hero-copy-reveal .72s cubic-bezier(.22, .61, .36, 1) both;
+}
+
+.hero-copy > *:nth-child(1) {
+  animation-delay: .08s;
+}
+
+.hero-copy > *:nth-child(2) {
+  animation-delay: .14s;
+}
+
+.hero-copy > *:nth-child(3) {
+  animation-delay: .2s;
+}
+
+.hero-copy > *:nth-child(4) {
+  animation-delay: .26s;
+}
+
+.hero-copy > *:nth-child(5) {
+  animation-delay: .32s;
+}
+
+.hero-copy > *:nth-child(6) {
+  animation-delay: .38s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy > * {
+    opacity: 1;
+    animation: none;
+  }
+}
+
 .eyebrow {
   margin: 0 0 18px;
   color: var(--sage);
