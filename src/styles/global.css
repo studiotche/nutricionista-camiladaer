@@ -149,7 +149,7 @@ a {
   width: 0;
   height: 1px;
   background: var(--terracotta);
-  transition: width .3s ease;
+  transition: width .45s cubic-bezier(.22, .61, .36, 1);
 }
 
 .desktop-nav a:hover::after,
@@ -170,6 +170,17 @@ a {
   background: var(--paper);
   cursor: pointer;
   padding: 0;
+  transition: background .4s ease, border-color .4s ease, transform .45s cubic-bezier(.22, .61, .36, 1);
+}
+
+.hamburger:hover {
+  background: rgba(23, 21, 16, .04);
+  border-color: rgba(23, 21, 16, .3);
+}
+
+.hamburger:active {
+  transform: scale(.95);
+  transition-duration: .15s;
 }
 
 .hamburger span {
@@ -195,13 +206,22 @@ a {
   font-family: var(--display);
   font-size: .92rem;
   font-weight: 600;
-  transition: transform .3s ease, background .3s ease, color .3s ease;
+  cursor: pointer;
+  will-change: transform;
+  transition: transform .45s cubic-bezier(.22, .61, .36, 1), background .45s cubic-bezier(.22, .61, .36, 1), color .35s ease, border-color .45s ease, box-shadow .45s ease;
 }
 
 .button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   background: var(--sage-dark);
   border-color: var(--sage-dark);
+  box-shadow: 0 14px 30px rgba(4, 73, 37, .22);
+}
+
+.button:active {
+  transform: translateY(-1px) scale(.98);
+  box-shadow: 0 6px 16px rgba(4, 73, 37, .18);
+  transition-duration: .15s;
 }
 
 .button:focus-visible,
@@ -226,6 +246,7 @@ summary:focus-visible {
 .button-light:hover {
   background: var(--paper);
   border-color: var(--paper);
+  box-shadow: 0 14px 30px rgba(23, 21, 16, .18);
 }
 
 .text-link {
@@ -238,6 +259,13 @@ summary:focus-visible {
   border-bottom: 1px solid rgba(61, 107, 82, .4);
   padding-block: 6px;
   font-weight: 600;
+  transition: color .4s ease, border-color .4s ease, gap .45s cubic-bezier(.22, .61, .36, 1);
+}
+
+.text-link:hover {
+  color: var(--sage-dark);
+  border-color: currentColor;
+  gap: 14px;
 }
 
 .text-link span {
@@ -249,6 +277,15 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: transform .45s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button:hover span {
+  transform: translate(2px, -2px);
+}
+
+.text-link:hover span {
+  transform: translateX(4px);
 }
 
 .text-link-dark {
@@ -666,7 +703,7 @@ summary:focus-visible {
   padding: 34px 35px 30px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  transition: background .3s ease;
+  transition: background .5s cubic-bezier(.22, .61, .36, 1), transform .5s cubic-bezier(.22, .61, .36, 1), box-shadow .5s ease;
 }
 
 .service-card:nth-child(3n) {
@@ -686,6 +723,8 @@ summary:focus-visible {
 
 .service-card:hover {
   background: rgba(23, 21, 16, .035);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(23, 21, 16, .08);
 }
 
 .service-number {
@@ -712,6 +751,12 @@ summary:focus-visible {
   border-bottom: 1px solid var(--line);
   font-size: .87rem;
   font-weight: 600;
+  transition: color .4s ease, border-color .4s ease;
+}
+
+.service-card a:hover {
+  color: var(--sage-dark);
+  border-color: var(--sage-dark);
 }
 
 .process-section {
@@ -925,6 +970,12 @@ summary:focus-visible {
   color: var(--ink);
   font-weight: 600;
   border-bottom: 1px solid var(--line);
+  transition: color .4s ease, border-color .4s ease;
+}
+
+.locations-actions p a:hover {
+  color: var(--sage-dark);
+  border-color: var(--sage-dark);
 }
 
 .faq-section {
@@ -947,17 +998,31 @@ summary:focus-visible {
 
 .faq-list details {
   border-bottom: 1px solid var(--line);
+  transition: background .5s ease;
+}
+
+.faq-list details:hover {
+  background: rgba(23, 21, 16, .02);
 }
 
 .faq-list summary {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
   cursor: pointer;
   list-style: none;
-  padding: 25px 0;
+  padding: 25px 8px;
+  margin-inline: -8px;
+  border-radius: 6px;
   font-family: var(--display);
   font-weight: 600;
+  transition: color .4s ease, background .45s ease, padding-left .45s cubic-bezier(.22, .61, .36, 1);
+}
+
+.faq-list summary:hover {
+  color: var(--sage-dark);
+  padding-left: 12px;
 }
 
 .faq-list summary::-webkit-details-marker {
@@ -965,19 +1030,42 @@ summary:focus-visible {
 }
 
 .faq-list summary span {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid transparent;
   color: var(--terracotta-deep);
   font-size: 1.4rem;
   font-weight: 400;
-  transition: transform .3s ease;
+  line-height: 1;
+  transition: transform .55s cubic-bezier(.22, .61, .36, 1), background .4s ease, border-color .4s ease;
+}
+
+.faq-list summary:hover span {
+  border-color: var(--line);
+  background: rgba(23, 21, 16, .04);
 }
 
 .faq-list details[open] summary span {
-  transform: rotate(45deg);
+  transform: rotate(135deg);
 }
 
-.faq-list details p {
+.faq-list details[open].is-closing summary span {
+  transform: rotate(0deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  opacity: 1;
+  transition: height .55s cubic-bezier(.22, .61, .36, 1), opacity .45s ease;
+}
+
+.faq-answer > p {
   max-width: 680px;
-  margin: -5px 44px 25px 0;
+  margin: 0 44px 25px 0;
   color: var(--muted);
 }
 
@@ -1024,11 +1112,12 @@ summary:focus-visible {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, .4);
   text-underline-offset: 4px;
-  transition: color .3s ease;
+  transition: color .4s ease, text-decoration-color .4s ease;
 }
 
 .contact-details .contact-tel:hover {
   color: var(--cream);
+  text-decoration-color: currentColor;
 }
 
 .contact-details .button {
@@ -1141,11 +1230,12 @@ summary:focus-visible {
 
 .footer-links a {
   color: rgba(255, 255, 255, .65);
-  transition: color .3s ease;
+  transition: color .4s ease, padding-left .45s cubic-bezier(.22, .61, .36, 1);
 }
 
 .footer-links a:hover {
   color: var(--white);
+  padding-left: 4px;
 }
 
 .footer-bottom {
@@ -1175,11 +1265,18 @@ summary:focus-visible {
   z-index: 40;
   right: 24px;
   bottom: 24px;
-  transition: transform .3s ease;
+  transition: transform .45s cubic-bezier(.22, .61, .36, 1), filter .45s ease;
+  will-change: transform;
 }
 
 .floating-whatsapp:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.04);
+  filter: drop-shadow(0 14px 24px rgba(23, 21, 16, .25));
+}
+
+.floating-whatsapp:active {
+  transform: translateY(-1px) scale(.97);
+  transition-duration: .15s;
 }
 
 .floating-whatsapp img {
@@ -1249,6 +1346,12 @@ body.menu-open {
   color: var(--ink);
   font-size: 1.05rem;
   cursor: pointer;
+  transition: background .4s ease, transform .45s cubic-bezier(.22, .61, .36, 1);
+}
+
+.menu-close:hover {
+  background: rgba(23, 21, 16, .05);
+  transform: rotate(90deg);
 }
 
 .menu-panel-head {
@@ -1292,7 +1395,7 @@ body.menu-open {
   content: "→";
   color: var(--terracotta-deep);
   font-size: .95rem;
-  transition: transform .3s ease;
+  transition: transform .45s cubic-bezier(.22, .61, .36, 1);
 }
 
 .mobile-nav a:hover::after,
