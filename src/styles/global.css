@@ -53,14 +53,11 @@ html {
   scroll-padding-top: 88px;
 }
 
-/* Lenis (scroll suave, só desktop) — escopado para não afetar mobile/sem JS */
+/* Lenis (scroll suave, só desktop) — mesmo CSS injetado pelo plugin.
+   Escopado em html.lenis para não afetar mobile/sem JS. */
 html.lenis {
-  scroll-behavior: auto;
-}
-
-html.lenis,
-html.lenis body {
-  height: auto;
+  scroll-behavior: auto !important;
+  height: auto !important;
 }
 
 .lenis.lenis-smooth {

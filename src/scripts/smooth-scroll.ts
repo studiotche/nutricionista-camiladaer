@@ -2,13 +2,19 @@
  * Scroll suave (Lenis) — adaptação do plugin WordPress "Scroll Suave"
  * para o site Astro.
  *
- * Mesma configuração do plugin:
+ * Paridade exata com o plugin (assets/js/bootstrap.js):
+ * - mesma lib: @studio-freight/lenis@0.2.28
+ * - mesmas opções de init
  * - só ativa no desktop (viewport >= 1025px)
- * - duration 1.2 + easing exponencial
- * - âncoras (#...) roladas via lenis.scrollTo
- * - fallback nativo quando o Lenis não carrega
+ * - âncoras (#...) roladas via lenis.scrollTo + pushState do hash
+ * - scroll do hash ao carregar a página (30ms)
+ *
+ * Únicas diferenças intencionais:
+ * - offset -88 nas âncoras (compensa o header fixo de 88px)
+ * - foco movido junto no skip-link "#conteudo" (acessibilidade)
+ * - chunk separado: o mobile nem baixa a lib
  */
-import type Lenis from "lenis";
+import type Lenis from "@studio-freight/lenis";
 
 const MIN_WIDTH = 1025;
 const HEADER_OFFSET = -88; // compensa o header fixo (scroll-padding-top)
@@ -46,16 +52,15 @@ function wireAnchors(lenis: Lenis): void {
     "click",
     (event) => {
       const el = event.target as HTMLElement | null;
-      const anchor = el?.closest?.(
-        'a[href*="#"]'
-      ) as HTMLAnchorElement | null;
+      const anchor = el?.closest?.('a[href*="#"]') as HTMLAnchorElement | null;
       if (!anchor) return;
 
       const href = anchor.getAttribute("href") || "";
       if (!href || href === "#" || href === "#0") return;
 
       const hash =
-        anchor.hash || (href.includes("#") ? href.slice(href.indexOf("#")) : "");
+        anchor.hash ||
+        (href.includes("#") ? href.slice(href.indexOf("#")) : "");
       if (!hash || hash === "#") return;
 
       const target = resolveTarget(hash);
@@ -98,14 +103,16 @@ async function initSmoothScroll(): Promise<void> {
 
   let lenis: Lenis;
   try {
-    const { default: LenisCtor } = await import("lenis");
+    const { default: LenisCtor } = await import("@studio-freight/lenis");
+    // opções idênticas às do plugin
     lenis = new LenisCtor({
       duration: LENIS_DURATION,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: "vertical",
-      smoothWheel: true,
-      syncTouch: false,
-      wheelMultiplier: 1,
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
       touchMultiplier: 2,
       infinite: false,
     });
