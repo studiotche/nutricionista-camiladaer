@@ -1285,13 +1285,12 @@ summary:focus-visible {
   z-index: 40;
   right: 24px;
   bottom: 24px;
-  transition: transform .3s cubic-bezier(.22, .61, .36, 1), filter .3s ease;
+  transition: transform .3s cubic-bezier(.22, .61, .36, 1);
   will-change: transform;
 }
 
 .floating-whatsapp:hover {
   transform: translateY(-4px) scale(1.04);
-  filter: drop-shadow(0 14px 24px rgba(23, 21, 16, .25));
 }
 
 .floating-whatsapp:active {
