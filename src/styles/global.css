@@ -1802,4 +1802,13 @@ body.menu-open {
   .contact-section h2 {
     font-size: clamp(1.5rem, 7vw, 2.1rem);
   }
+
+  .service-card h3,
+  .location-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .steps-list h3 {
+    font-size: 1.3rem;
+  }
 }
