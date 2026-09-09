@@ -273,8 +273,8 @@ const jsonLd = {
         src={asset(site.assets.processBg)}
         alt=""
         aria-hidden="true"
-        width="1754"
-        height="897"
+        width="1737"
+        height="905"
         loading="lazy"
       />
       <div class="container process-grid">
@@ -310,17 +310,6 @@ const jsonLd = {
             ))
           }
         </ol>
-      </div>
-      <div class="container">
-        <figure class="pilares-figure image-frame">
-          <img
-            src={asset(site.assets.pilares)}
-            alt="Ilustração de alimentos frescos: legumes, frutas, peixe, grãos e azeite"
-            width="1737"
-            height="905"
-            loading="lazy"
-          />
-        </figure>
       </div>
     </section>
 
@@ -458,7 +447,7 @@ const jsonLd = {
             >
           </h2>
         </div>
-        <div class="locations-grid">
+        <div class="locations-grid locations-duo">
           {
             locations.map((location) => (
               <article class="location-card">
@@ -475,6 +464,14 @@ const jsonLd = {
               </article>
             ))
           }
+          <div class="map-frame locations-map">
+            <iframe
+              src={site.mapsEmbedUrl}
+              title="Mapa do consultório da nutricionista Camila Daer em Novo Hamburgo"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
         <div class="locations-actions">
           <a
@@ -548,46 +545,6 @@ const jsonLd = {
       </div>
     </section>
 
-    <section class="section map-section" id="mapa">
-      <div class="container map-grid">
-        <div class="map-copy">
-          <p class="eyebrow">Como chegar</p>
-          <h2>
-            Encontre o <span class="highlight">consultório</span> para sua consulta
-          </h2>
-          <p>
-            Os atendimentos acontecem no Complexo Daer, em Novo Hamburgo,
-            com atenção individualizada e sem pressa.
-          </p>
-          <ul class="map-addresses">
-            {
-              locations.slice(0, 2).map((location) => (
-                <li>
-                  <span class="kicker">{location.city}</span>
-                  <strong>{location.address}</strong>
-                  <small>{location.district}</small>
-                </li>
-              ))
-            }
-          </ul>
-          <a
-            class="text-link text-link-dark"
-            href={site.mapsUrl}
-            target="_blank"
-            rel="noreferrer"
-            >Ver rotas no Google Maps <span aria-hidden="true">↗</span></a
-          >
-        </div>
-        <div class="map-frame">
-          <iframe
-            src={site.mapsEmbedUrl}
-            title="Mapa do consultório da nutricionista Camila Daer em Novo Hamburgo"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">

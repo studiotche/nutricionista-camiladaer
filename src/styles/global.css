@@ -756,7 +756,7 @@ summary:focus-visible {
 .process-section {
   position: relative;
   isolation: isolate;
-  background: var(--cream);
+  background: var(--sage-tint);
 }
 
 .process-bg {
@@ -766,7 +766,6 @@ summary:focus-visible {
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  opacity: 0.05;
 }
 
 .process-grid {
@@ -818,12 +817,6 @@ summary:focus-visible {
   font-family: var(--serif);
   font-size: 1.7rem;
   font-weight: 400;
-}
-
-.pilares-figure {
-  margin: clamp(48px, 6vw, 84px) 0 0;
-  border-radius: 5px;
-  aspect-ratio: 1737 / 905;
 }
 
 .steps-list p {
@@ -998,6 +991,26 @@ summary:focus-visible {
   margin-top: 4px;
   color: var(--muted);
   font-size: .84rem;
+}
+
+.locations-duo {
+  align-items: stretch;
+  gap: 18px;
+  border: 0;
+}
+
+.locations-duo .location-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--paper);
+}
+
+.locations-duo .map-frame {
+  aspect-ratio: auto;
+  min-height: 340px;
 }
 
 .locations-actions {
@@ -1540,6 +1553,10 @@ body.menu-open {
 
   .locations-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .locations-duo {
+    grid-template-columns: 1fr;
   }
 
   .location-card:nth-child(2) {

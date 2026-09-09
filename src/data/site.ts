@@ -36,8 +36,8 @@ export const site = {
   },
   hero: {
     eyebrow: "Nutrição para mulheres",
-    title: "Nutricionista e gastróloga em Novo Hamburgo",
-    titleHighlight: "em Novo Hamburgo",
+    title: "Nutricionista e gastróloga em Novo Hamburgo, Camila Daer",
+    titleHighlight: "Camila Daer",
     tagline: "Comer bem pode ser leve, gostoso e possível.",
     description:
       "Cuidado individual para sua saúde, sua rotina e sua relação com a comida.",
@@ -57,8 +57,7 @@ export const site = {
     hero: "/images/camila_daer_nutricionista.webp",
     heroMobile: "/images/camila_daer.webp",
     about: "/images/camila_daer_nutricionista_sobre.webp",
-    pilares: "/images/nutricionista.webp",
-    processBg: "/imagens/camila-daer-consultorio.jpg",
+    processBg: "/images/nutricionista.webp",
   },
 } as const;
 
