@@ -53,6 +53,28 @@ html {
   scroll-padding-top: 88px;
 }
 
+/* Lenis (scroll suave, só desktop) — escopado para não afetar mobile/sem JS */
+html.lenis {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden !important;
+}
+
 body {
   margin: 0;
   background: var(--paper);
