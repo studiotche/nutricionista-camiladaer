@@ -891,11 +891,12 @@ summary:focus-visible {
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
 .testimonial-card {
+  min-width: 0;
   min-height: 310px;
   display: flex;
   flex-direction: column;
@@ -1540,7 +1541,7 @@ body.menu-open {
   }
 
   .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .testimonial-card:nth-child(4) {
@@ -1695,10 +1696,6 @@ body.menu-open {
   }
 
   .testimonial-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .testimonials-section .testimonial-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -1709,12 +1706,19 @@ body.menu-open {
 
   .testimonial-card,
   .testimonial-card:last-child {
-    min-height: 270px;
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .testimonial-card blockquote {
+    margin: 20px 0 24px;
+    font-size: 1.2rem;
   }
 
   .testimonial-heading {
     align-items: start;
-    margin-bottom: 42px;
+    gap: 24px;
+    margin-bottom: 36px;
   }
 
   .locations-grid {
