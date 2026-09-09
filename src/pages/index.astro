@@ -149,7 +149,7 @@ const jsonLd = {
         aria-label="Fechar menu"><span aria-hidden="true">✕</span></button
       >
       <div class="menu-panel-head">
-          <span class="menu-brand">Camila Daer</span><small class="kicker"
+        <span class="menu-brand">Camila Daer</span><small class="kicker"
           >Nutricionista</small
         >
       </div>
@@ -332,11 +332,7 @@ const jsonLd = {
               rel="noreferrer"
               aria-label={`Avaliação ${site.googleRating.score} de 5 em ${site.googleRating.reviews} avaliações no Google`}
             >
-              <svg
-                class="google-g"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
+              <svg class="google-g" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fill="#4285F4"
                   d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"
@@ -504,7 +500,7 @@ const jsonLd = {
               <details open={index === 0}>
                 <summary>
                   {question}
-                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true" />
                 </summary>
                 <div class="faq-answer">
                   <p>{answer}</p>
@@ -525,7 +521,9 @@ const jsonLd = {
             >
           </h2>
         </div><div class="contact-details">
-          <p><span>Modalidade</span><strong>Presencial · Particular</strong></p><p>
+          <p>
+            <span>Modalidade</span><strong>Presencial · Particular</strong>
+          </p><p>
             <span>Pagamento</span><strong>PIX e dinheiro</strong>
           </p><p>
             <span>WhatsApp</span><strong>{site.phoneDisplay}</strong>
@@ -544,7 +542,6 @@ const jsonLd = {
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -554,15 +551,14 @@ const jsonLd = {
         alt={`${site.role} ${site.name}`}
         width="205"
         height="65"
-      /><p>
-        Atendimento nutricional particular em Novo Hamburgo, RS.
-      </p><div class="footer-links">
-        <a href={site.telLink}>Ligar: {site.phoneDisplay}</a
-        ><a href={site.instagram} target="_blank" rel="noreferrer"
-          >Instagram @nutricamiladaer</a
-        ><a href="#inicio"
-          >Voltar ao início ↑</a
-        >
+      /><p>Atendimento nutricional particular em Novo Hamburgo, RS.</p><div
+        class="footer-links"
+      >
+        <a href={site.telLink}>Ligar: {site.phoneDisplay}</a><a
+          href={site.instagram}
+          target="_blank"
+          rel="noreferrer">Instagram @nutricamiladaer</a
+        ><a href="#inicio">Voltar ao início ↑</a>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -570,14 +566,9 @@ const jsonLd = {
         >© {new Date().getFullYear()}
         {site.name} · {site.fullRole} · {site.crn}</span
       ><span class="footer-credit"
-        ><img
-          src={asset("/images/logo-studiotche.webp")}
-          alt="Studio Tchê"
-          width="512"
-          height="515"
-        />Desenvolvido por
-        <a href="https://studiotche.com" target="_blank" rel="noreferrer"
-          >Studio Tchê</a
+        >Desenvolvido por
+        <a href="https://jeankist.com" target="_blank" rel="noreferrer"
+          >Jean Kist</a
         >
         ©</span
       >
@@ -637,10 +628,7 @@ const jsonLd = {
     if (timeout !== undefined) window.clearTimeout(timeout);
   };
 
-  const finishOpenFaq = (
-    details: HTMLDetailsElement,
-    answer: HTMLElement
-  ) => {
+  const finishOpenFaq = (details: HTMLDetailsElement, answer: HTMLElement) => {
     clearFaqTimeout(details);
     faqTimeouts.set(
       details,
@@ -648,7 +636,7 @@ const jsonLd = {
         if (details.open && !details.classList.contains("is-closing")) {
           answer.style.height = "auto";
         }
-      }, FAQ_DURATION)
+      }, FAQ_DURATION),
     );
   };
 
@@ -670,7 +658,7 @@ const jsonLd = {
         details.classList.remove("is-closing");
         answer.style.height = "";
         answer.style.opacity = "";
-      }, FAQ_DURATION)
+      }, FAQ_DURATION),
     );
   };
 
@@ -726,7 +714,7 @@ const jsonLd = {
             }
           });
         },
-        { threshold: 0.25 }
+        { threshold: 0.25 },
       );
       aboutObserver.observe(aboutFrame);
     } else {
