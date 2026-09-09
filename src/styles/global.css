@@ -1262,6 +1262,13 @@ summary:focus-visible {
   background: var(--sage-tint);
 }
 
+.fachada-frame {
+  border-radius: 5px;
+  aspect-ratio: 16 / 10;
+  margin: 0 0 28px;
+  max-width: 480px;
+}
+
 .map-frame iframe {
   display: block;
   width: 100%;

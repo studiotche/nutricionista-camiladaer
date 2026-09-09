@@ -21,57 +21,45 @@ const jsonLd = {
     {
       "@type": "Person",
       "@id": `${site.seo.url}/#person`,
-      name: `${site.role} ${site.name}`,
-      jobTitle: site.role,
+      name: `${site.fullRole} ${site.name}`,
+      jobTitle: site.fullRole,
       url: site.seo.url,
-      image: `${site.seo.url.replace(/\/$/, "")}/images/nutricionista-ivoti-hero-sara.webp`,
+      image: `${site.seo.url.replace(/\/$/, "")}${site.seo.ogImage}`,
       telephone: `+${site.phoneLink}`,
       sameAs: [site.googleProfile, site.instagram],
-      areaServed: ["Ivoti", "Atendimento online"],
+      areaServed: ["Novo Hamburgo"],
       workLocation: locations.slice(0, 1).map((location) => ({
         "@type": "Place",
         name: `Consultório em ${location.city}`,
         address: {
           "@type": "PostalAddress",
-          streetAddress: location.address.replace(" · sala 06", ", sala 06"),
+          streetAddress: "Av. Pedro Adams Filho, 6000, apto. 701",
           addressLocality: location.city,
           addressRegion: site.state,
+          postalCode: "93510-050",
           addressCountry: "BR",
         },
       })),
     },
     {
-      "@type": "MedicalBusiness",
-      "@id": `${site.seo.url}/#medicalbusiness`,
-      name: `${site.role} ${site.name}`,
-      image: `${site.seo.url.replace(/\/$/, "")}/images/nutricionista-ivoti-hero-sara.webp`,
+      "@type": "Dietitian",
+      "@id": `${site.seo.url}/#dietitian`,
+      name: `${site.fullRole} ${site.name}`,
+      image: `${site.seo.url.replace(/\/$/, "")}${site.seo.ogImage}`,
       telephone: `+${site.phoneLink}`,
       priceRange: "$$",
       medicalSpecialty: "Nutrition",
-      sameAs: [site.instagram],
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "09:00",
-          closes: "20:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Saturday",
-          opens: "08:00",
-          closes: "17:00",
-        },
-      ],
-      areaServed: ["Ivoti", "Vale do Sinos"],
+      sameAs: [site.instagram, site.googleProfile],
+      areaServed: ["Novo Hamburgo", "Vale do Sinos"],
       location: locations.slice(0, 1).map((location) => ({
         "@type": "Place",
         name: `Consultório em ${location.city}`,
         address: {
           "@type": "PostalAddress",
-          streetAddress: location.address.replace(" · sala 06", ", sala 06"),
+          streetAddress: "Av. Pedro Adams Filho, 6000, apto. 701",
           addressLocality: location.city,
           addressRegion: site.state,
+          postalCode: "93510-050",
           addressCountry: "BR",
         },
       })),
@@ -87,7 +75,7 @@ const jsonLd = {
     },
     ...testimonials.map((testimonial) => ({
       "@type": "Review",
-      itemReviewed: { "@id": `${site.seo.url}/#medicalbusiness` },
+      itemReviewed: { "@id": `${site.seo.url}/#dietitian` },
       author: { "@type": "Person", name: testimonial.name },
       datePublished: testimonial.dateTime,
       reviewBody: testimonial.text,
@@ -161,7 +149,7 @@ const jsonLd = {
         aria-label="Fechar menu"><span aria-hidden="true">✕</span></button
       >
       <div class="menu-panel-head">
-        <span class="menu-brand">Sara Knorst</span><small class="kicker"
+          <span class="menu-brand">Camila Daer</span><small class="kicker"
           >Nutricionista</small
         >
       </div>
@@ -191,7 +179,7 @@ const jsonLd = {
           />
           <img
             src={asset(site.assets.hero)}
-            alt="Nutricionista Sara Knorst em consultório, atendimento em Ivoti e online"
+            alt="Nutricionista Camila Daer sorrindo, atendimento particular em Novo Hamburgo"
             width="1717"
             height="916"
             fetchpriority="high"
@@ -223,7 +211,7 @@ const jsonLd = {
         </div>
         <div class="location-note">
           <span class="location-dot" aria-hidden="true"></span><span
-            >Presencial em Ivoti · Online</span
+            >Presencial em Novo Hamburgo · Particular</span
           >
         </div>
       </div>
@@ -233,7 +221,7 @@ const jsonLd = {
       <div class="container trust-grid">
         <p><span>01</span> Escuta sem julgamentos</p><p>
           <span>02</span> Estratégias personalizadas
-        </p><p><span>03</span> Presencial e online</p>
+        </p><p><span>03</span> Atendimento particular</p>
       </div>
     </section>
 
@@ -412,14 +400,14 @@ const jsonLd = {
           <div class="image-frame about-frame">
             <img
               src={asset(site.assets.about)}
-              alt="Nutricionista Sara Knorst em ambiente profissional com luz natural"
+              alt="Nutricionista Camila Daer em ambiente profissional com luz natural"
               width="1122"
               height="1402"
               loading="lazy"
             />
           </div>
           <div class="signature-card" aria-hidden="true">
-            <span>SK</span><small>estratégia que cabe na sua vida</small>
+            <span>CD</span><small>estratégia que cabe na sua vida</small>
           </div>
         </div>
         <div class="about-copy">
@@ -455,7 +443,7 @@ const jsonLd = {
       <div class="container">
         <div class="locations-heading">
           <p class="eyebrow">Onde você pode me encontrar</p><h2>
-            Presencial ou online, com <span class="highlight"
+            Presencial em Novo Hamburgo, com <span class="highlight"
               >a mesma atenção</span
             >
           </h2>
@@ -530,8 +518,8 @@ const jsonLd = {
             >
           </h2>
         </div><div class="contact-details">
-          <p><span>Modalidades</span><strong>Presencial e online</strong></p><p>
-            <span>Horários</span><strong>Ter–Sex 09h–20h · Sáb 08h–17h</strong>
+          <p><span>Modalidade</span><strong>Presencial · Particular</strong></p><p>
+            <span>Pagamento</span><strong>PIX e dinheiro</strong>
           </p><p>
             <span>WhatsApp</span><strong>{site.phoneDisplay}</strong>
           </p><p>
@@ -544,7 +532,7 @@ const jsonLd = {
             href={whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            >Falar com Sara <span aria-hidden="true">↗</span></a
+            >Falar com Camila <span aria-hidden="true">↗</span></a
           >
         </div>
       </div>
@@ -558,9 +546,16 @@ const jsonLd = {
             Encontre o <span class="highlight">consultório</span> para sua consulta
           </h2>
           <p>
-            Os atendimentos presenciais acontecem em Ivoti, com a mesma
-            atenção e cuidado no acompanhamento online.
+            Os atendimentos acontecem no Complexo Daer, em Novo Hamburgo,
+            com atenção individualizada e sem pressa.
           </p>
+          <div class="image-frame fachada-frame">
+            <img
+              src={asset(site.assets.fachada)}
+              alt="Fachada do Complexo Daer à noite, consultório da nutricionista Camila Daer em Novo Hamburgo"
+              loading="lazy"
+            />
+          </div>
           <ul class="map-addresses">
             {
               locations.slice(0, 2).map((location) => (
@@ -583,7 +578,7 @@ const jsonLd = {
         <div class="map-frame">
           <iframe
             src={site.mapsEmbedUrl}
-            title="Mapa do consultório da nutricionista Sara Knorst em Ivoti"
+            title="Mapa do consultório da nutricionista Camila Daer em Novo Hamburgo"
             loading="lazy"
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -600,11 +595,11 @@ const jsonLd = {
         width="205"
         height="65"
       /><p>
-        Atendimento nutricional presencial em Ivoti, RS, e consultas online.
+        Atendimento nutricional particular em Novo Hamburgo, RS.
       </p><div class="footer-links">
         <a href={site.telLink}>Ligar: {site.phoneDisplay}</a
         ><a href={site.instagram} target="_blank" rel="noreferrer"
-          >Instagram @nutri.saraknorst</a
+          >Instagram @nutricamiladaer</a
         ><a href="#inicio"
           >Voltar ao início ↑</a
         >
@@ -613,8 +608,7 @@ const jsonLd = {
     <div class="container footer-bottom">
       <span
         >© {new Date().getFullYear()}
-        {site.name} · {site.role} · CRN
-        {site.crn}</span
+        {site.name} · {site.fullRole} · {site.crn}</span
       ><span class="footer-credit"
         ><img
           src={asset("/images/logo-studiotche.webp")}
@@ -634,7 +628,7 @@ const jsonLd = {
     href={whatsappUrl}
     target="_blank"
     rel="noreferrer"
-    aria-label="Olá, Nutri Sara! Quero mais informações sobre as consultas."
+    aria-label="Olá, Camila! Gostaria de agendar uma consulta."
   >
     <img src={asset("/images/whatsapp.webp")} alt="" width="34" height="34" />
   </a>

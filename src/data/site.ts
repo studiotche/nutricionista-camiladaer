@@ -1,111 +1,109 @@
 export const site = {
-  name: "Sara Knorst",
+  name: "Camila Daer",
   role: "Nutricionista",
-  city: "Ivoti",
+  fullRole: "Nutricionista e Gastróloga",
+  city: "Novo Hamburgo",
   state: "RS",
-  region: "Ivoti e atendimento online",
-  // TODO: Confirmar CRN com a profissional antes da publicação definitiva.
-  crn: "XXXXX",
-  credentials: "Nutricionista · CRN XXXXX", // TODO: atualizar com o CRN real.
-  phoneDisplay: "(51) 98028-9339",
-  phoneLink: "5551980289339",
-  telLink: "tel:+5551980289339",
-  email: "saraknorst@gmail.com",
-  instagram: "https://www.instagram.com/nutri.saraknorst/",
+  region: "Novo Hamburgo/RS",
+  crn: "CFN 20977D RS",
+  credentials: "Nutricionista e Gastróloga · CFN 20977D RS",
+  phoneDisplay: "(51) 98130-9357",
+  phoneLink: "5551981309357",
+  telLink: "tel:+5551981309357",
+  email: "",
+  instagram: "https://www.instagram.com/nutricamiladaer/",
+  doctoralia:
+    "https://www.doctoralia.com.br/camila-daer-2/nutricionista/novo-hamburgo",
   hours: [
-    { days: "Terça a sexta", time: "09:00 às 20:00" },
-    { days: "Sábado", time: "08:00 às 17:00" },
-    { days: "Domingo e segunda", time: "Fechado" },
+    { days: "Atendimento particular", time: "Consultar disponibilidade pelo WhatsApp" },
   ],
-  googleProfile: "https://www.google.com/maps/place/Nutricionista+Sara+Knorst/@-29.5966783,-51.1613002,17z/data=!4m15!1m8!3m7!1s0x951945dcb30cab0b:0x2bcbe6a1b4193e19!2sNutricionista+Sara+Knorst!8m2!3d-29.5966524!4d-51.1615069!10e5!16s%2Fg%2F11v702zfvf!3m5!1s0x951945dcb30cab0b:0x2bcbe6a1b4193e19!8m2!3d-29.5966524!4d-51.1615069!16s%2Fg%2F11v702zfvf?entry=ttu",
+  googleProfile:
+    "https://www.google.com/maps/place/Nutricionista+Camila+Daer/@-29.6797581,-51.1306469,17z/data=!4m6!3m5!1s0x95194373e39be22d:0x7472dd2ea6e1cddf!8m2!3d-29.6797581!4d-51.1306469!16s%2Fg%2F11y13xyxgl?entry=ttu",
   googleRating: {
     score: "5,0",
-    reviews: 60,
+    reviews: 10,
   },
-  mapsEmbedUrl: "https://maps.google.com/maps?q=-29.5966524,-51.1615069&z=17&hl=pt-BR&output=embed",
-  mapsUrl: "https://www.google.com/maps/place/Nutricionista+Sara+Knorst/@-29.5966524,-51.1615069,17z",
+  mapsEmbedUrl:
+    "https://maps.google.com/maps?q=-29.6797581,-51.1306469&z=17&hl=pt-BR&output=embed",
+  mapsUrl:
+    "https://www.google.com/maps/place/Nutricionista+Camila+Daer/@-29.6797581,-51.1306469,17z",
   seo: {
-    // TODO: substituir pelo domínio final antes da publicação.
-    title: "Nutricionista em Ivoti | Sara Knorst · Emagrecimento Feminino",
+    title: "Nutricionista em Novo Hamburgo | Camila Daer · Mulheres, Menopausa e Emagrecimento",
     description:
-      "Nutricionista em Ivoti com foco em emagrecimento feminino. Acompanhamento estratégico, prático e sem dietas restritivas, presencial e online.",
-    url: "https://studiotche.github.io/nutricionista-saraknorst/",
-    ogImage: "/images/nutricionista-ivoti-hero-sara.webp",
+      "Camila Daer, nutricionista e gastróloga em Novo Hamburgo/RS. Nutrição personalizada para mulheres, menopausa, emagrecimento e bem-estar — sem restrições extremas. Agende pelo WhatsApp.",
+    url: "https://studiotche.github.io/nutricionista-camiladaer/",
+    ogImage: "/images/camila_daer_nutricionista.webp",
   },
   hero: {
-    eyebrow: "Atendimento presencial e online",
-    title: "Nutricionista em Ivoti, Sara Knorst",
-    titleHighlight: "Sara Knorst",
-    tagline: "Emagrecimento feminino com estratégia, sem restrição.",
+    eyebrow: "Atendimento particular em Novo Hamburgo",
+    title: "Comer bem pode ser leve, gostoso e possível.",
+    titleHighlight: "leve, gostoso e possível.",
+    tagline:
+      "Nutrição personalizada para cuidar da sua saúde, da sua rotina e da sua relação com a comida.",
     description:
-      "Mais de 400 mulheres já transformaram a relação com a comida e com o corpo em um acompanhamento prático, possível e sem dietas impossíveis.",
+      "Sou nutricionista e gastróloga. Meu atendimento é individualizado, respeitando sua rotina, suas preferências e seus objetivos — sem dietas extremamente restritivas e sem culpa.",
   },
   about: {
-    eyebrow: "Olá, eu sou a Sara!",
-    title: "Nutrição feminina para transformar sua relação com a comida",
-    titleHighlight: "sua relação com a comida",
+    eyebrow: "Olá, eu sou a Camila!",
+    title: "Nutrição e gastronomia para uma relação leve com a comida",
+    titleHighlight: "relação leve com a comida",
     paragraphs: [
-      "Meu trabalho é ajudar mulheres a emagrecerem com estratégia, sem abrir mão de comer bem e sem viver de restrição. Acredito que resultado não vem de comer menos, e sim de comer do jeito certo para o seu corpo e a sua rotina.",
-      "Por isso, cada acompanhamento é construído a partir da sua história, das suas preferências e dos seus objetivos — com metas realistas e passos que cabem na vida real.",
-      "Nada de fórmulas prontas ou dietas genéricas: estratégia, constância e um plano que faça sentido para você, para que o resultado venha e permaneça.",
+      "Acredito que uma alimentação saudável precisa ser possível, prazerosa e adaptada à realidade de cada pessoa.",
+      "Meu atendimento é individualizado: juntas, construímos estratégias práticas e sustentáveis para emagrecimento, menopausa, bem-estar e saúde intestinal — respeitando sua rotina, suas preferências e seus objetivos.",
+      "Nada de fórmulas prontas ou extremismos: unindo nutrição e gastronomia, o plano cabe na vida real e no prazer de comer bem.",
     ],
   },
   assets: {
-    logo: "/images/logo-saraknorst.svg",
-    hero: "/images/nutricionista-ivoti-hero-sara.webp",
-    heroMobile: "/images/nutricionista-ivoti-hero-sara-mobile.webp",
-    about: "/images/nutricionista-ivoti-sobre-sara.webp",
-    processBg: "/images/nutricionista-ivoti-sara.webp",
+    logo: "/imagens/logo-camiladaer.svg",
+    hero: "/images/camila_daer_nutricionista.webp",
+    heroMobile: "/images/camila_daer.webp",
+    about: "/images/camila_daer.webp",
+    fachada: "/images/camila_daer_fachada.webp",
+    processBg: "/imagens/camila-daer-consultorio.jpg",
   },
 } as const;
 
-// TODO: ajustar especialidades com a profissional antes da publicação definitiva.
 export const specialties = [
   {
     number: "01",
-    title: "Emagrecimento feminino",
-    text: "Um método estratégico para emagrecer sem restrição, com foco em resultados que duram e em uma relação saudável com a comida.",
+    title: "Emagrecimento",
+    text: "Estratégias práticas e sustentáveis para emagrecer sem restrições extremas, respeitando sua rotina e seu paladar.",
     detail:
-      "Aqui o foco não é a balança de uma semana, mas a construção de hábitos que se mantêm. O acompanhamento começa com uma avaliação completa e evolui em etapas graduais, com metas realistas e sem dietas impossíveis.",
+      "Avaliação completa, metas realistas e ajustes ao longo do acompanhamento — com comida de verdade e sem culpa.",
   },
   {
     number: "02",
-    title: "Reeducação alimentar",
-    text: "Aprender a comer de um jeito novo, sem culpa e sem abrir mão do prazer, em um processo feito para a sua rotina.",
+    title: "Menopausa e saúde da mulher",
+    text: "Cuidado nutricional para mulheres em diferentes fases, com atenção a sintomas, energia e qualidade de vida na menopausa.",
     detail:
-      "Você não vai sair de dieta, vai sair da dieta. O trabalho identifica o que funciona para o seu dia a dia e constrói um plano flexível, com orientações práticas que você consegue manter.",
+      "Plano individualizado que considera histórico, exames e rotina, unindo nutrição e gastronomia para mais bem-estar.",
   },
   {
     number: "03",
-    title: "Relação com a comida",
-    text: "Apoio para quem quer parar de fazer dieta, entender os sinais do corpo e encerrar o ciclo de restrição e exagero.",
+    title: "Bem-estar e saúde intestinal",
+    text: "Organização da rotina alimentar para mais disposição, leveza e equilíbrio — incluindo atenção à saúde intestinal.",
     detail:
-      "Comer pouco não é o caminho. O acompanhamento ajuda a reconstruir sua confiança nas escolhas, com escuta sem julgamentos e estratégias práticas para o dia a dia.",
-  },
-  {
-    number: "04",
-    title: "Saúde e qualidade de vida",
-    text: "Planejamento alimentar para quem quer mais energia, melhor disposição e uma rotina que sustente saúde e bem-estar.",
-    detail:
-      "Comer melhor impacta tudo: energia, sono, disposição e autoestima. O plano é montado a partir do seu histórico, dos seus exames e dos seus objetivos, com ajustes ao longo do tempo.",
-  },
-  {
-    number: "05",
-    title: "Acompanhamento online",
-    text: "Atendimento por videochamada com a mesma estratégia e atenção do presencial, para você evoluir de onde estiver.",
-    detail:
-      "O acompanhamento online segue o mesmo método: avaliação completa, plano individualizado e suporte contínuo pelo WhatsApp, com privacidade e praticidade.",
+      "Orientações práticas e possíveis, com trocas e adaptações que você consegue manter no dia a dia.",
   },
 ] as const;
 
 export const pillars = [
-  ["Nutricional", "Estratégias construídas a partir das suas necessidades, preferências e objetivos."],
-  ["Comportamental", "Atenção à rotina e aos hábitos que influenciam suas escolhas todos os dias."],
-  ["Estratégico", "Um plano prático, flexível e sem restrição, feito para caber na sua vida."],
+  [
+    "Conhecer",
+    "Escuta atenta da sua história, rotina, preferências e objetivos para entender o que faz sentido para você.",
+  ],
+  [
+    "Planejar",
+    "Plano individualizado e prático, sem dietas extremamente restritivas — com estratégias que cabem na vida real.",
+  ],
+  [
+    "Acompanhar",
+    "Ajustes contínuos e apoio próximo para evoluir com constância, sem culpa e com mais prazer ao comer.",
+  ],
 ] as const;
 
-// Depoimentos reais coletados do Google (perfil: 5,0 estrelas · 60 avaliações).
-// Datas aproximadas a partir do indicador "um mês atrás" (jul/2026) — confirmar antes da publicação.
+// Depoimentos reais coletados do Google (perfil: 5,0 estrelas · 10 avaliações).
+// Extração em 09/09/2026. Datas aproximadas a partir de "X meses atrás" — dia 09 usado como referência.
 export const testimonials: {
   name: string;
   date: string;
@@ -113,80 +111,79 @@ export const testimonials: {
   text: string;
 }[] = [
   {
-    name: "Sandra Linck",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "A Nutricionista Sara foi a divisora de águas na minha vida. De forma prática, estou conseguindo um emagrecimento lindo, comendo comida de verdade! Sem cortar isso ou aquilo, ela me ensinou que posso comer o que gosto de forma bem dosada. Em pouco mais de 7 meses, perdi 12 kg e hoje sou uma pessoa muito mais feliz!",
+    name: "Deivis Marcos",
+    date: "09/06/2026",
+    dateTime: "2026-06-09",
+    text: "Ótimo atendimento, superou todas minhas espectativas super recomendo❤️",
   },
   {
-    name: "Luana Knorst",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "Ótima profissional! Entendeu minha rotina para juntas montarmos um plano possível, prático, flexível e que trouxe e continua trazendo ótimos resultados!",
+    name: "Thiago Daer",
+    date: "09/05/2026",
+    dateTime: "2026-05-09",
+    text: "Posso dizer com total convicção que exerce a profissão com amor, responsabilidade e muito conhecimento. Cada atendimento é feito com atenção aos detalhes, buscando sempre entender o que realmente o paciente precisa, não apenas na alimentação, mas no estilo de vida como um todo.",
   },
   {
-    name: "Ana Lúcia Reder",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "A Sara é maravilhosa nutricionista prática: seu plano alimentar é com o que você tem em casa, e consegue manter fácil, atenciosa e incentivadora.",
+    name: "Silvia Sternberg",
+    date: "09/11/2025",
+    dateTime: "2025-11-09",
+    text: "O atendimento da Camila foi excepcional! De uma atenção maravilhosa, teve empatia, foi atenciosa e com tudo isso associado ao profissionalismo dela com certeza vai refletir no resultado final que procuro!",
   },
   {
-    name: "Thamires Stoffel-Levy",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "Se você procura dietas que realmente funcionam, que se adaptam à sua rotina e paladar, Sara é a nutricionista mais indicada: vai te ajudar, assim como vem me ajudando! Recomendo muito!!",
+    name: "Cíntia Rodrigues",
+    date: "09/11/2025",
+    dateTime: "2025-11-09",
+    text: "A nutri Camila, está fazendo eu enxergar de uma forma diferente “a dieta”, ou melhor, a reeducação alimentar! Sempre tive dificuldades e ela está me mostrando que não adianta fazer uma reeducação alimentar restritiva ou com extremismos e sim um momento de apreciar a comida de verdade, com trocas, com adaptações! Estou muito satisfeita, vai ter resultado muito bom!",
   },
   {
-    name: "Érica Wagner",
-    date: "04/08/2026",
-    dateTime: "2026-08-04",
-    text: "Sempre muito prestativa. Uma dieta variada e eficiente, adaptada à minha rotina, e sem passar fome.",
-  },
-  {
-    name: "Dienifer Schneider",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "Uma excelente profissional, te ajuda a atingir suas metas comendo bem e saudável!",
-  },
-  {
-    name: "Débora Dresch Da Rosa",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "É muito atenciosa e procura auxiliar nas nossas maiores dificuldades. Gostei muito do seu atendimento.",
+    name: "Marcelo Andrade",
+    date: "09/11/2025",
+    dateTime: "2025-11-09",
+    text: "Excelente profissional, atenciosa e dedicada, demonstra profundo conhecimento e cuidado em cada orientação nutricional.",
   },
 ];
 
 export const locations = [
   {
-    city: "Ivoti",
-    address: "Avenida Presidente Lucena, 3071 · sala 06",
-    district: "Centro · Ivoti/RS",
-    type: "Presencial",
-  },
-  {
-    city: "Atendimento online",
-    address: "Consulta por videochamada",
-    district: "De onde você estiver",
-    type: "Online",
+    city: "Novo Hamburgo",
+    address: "Av. Pedro Adams Filho, 6000 · apto. 701",
+    district: "Complexo Daer · Centro · Novo Hamburgo/RS · CEP 93510-050",
+    type: "Presencial · Particular",
   },
 ] as const;
 
 export const faqs = [
-  ["Onde acontecem as consultas presenciais?", "Os atendimentos presenciais acontecem em Ivoti, na Avenida Presidente Lucena, 3071, sala 06, no Centro."],
-  ["Quais os horários de atendimento?", "Os atendimentos acontecem de terça a sexta, das 09h às 20h, e aos sábados, das 08h às 17h. Domingos e segundas o consultório está fechado. Para agendar, é só chamar no WhatsApp."],
-  ["É possível consultar online?", "Sim. O atendimento online permite realizar a consulta com privacidade e conforto, de onde você estiver."],
-  ["Como faço para agendar?", `Clique em qualquer botão de agendamento para conversar diretamente pelo WhatsApp ${site.phoneDisplay}.`],
-  ["O acompanhamento é personalizado?", "Sim. A proposta considera sua rotina, preferências, objetivos, histórico e contexto, evitando orientações genéricas."],
-  // Confirmar com a profissional antes da publicação definitiva.
-  ["Atende convênio?", "A consulta é particular, com emissão de nota fiscal. Você pode encaminhar a nota ao seu convênio para solicitar reembolso, conforme as regras do seu plano."],
-  // Confirmar com a profissional antes da publicação definitiva.
-  ["Quanto custa a primeira consulta?", "O valor da consulta é informado diretamente pelo WhatsApp. O acompanhamento e sua duração são combinados de acordo com os seus objetivos."],
-  // Confirmar com a profissional antes da publicação definitiva.
-  ["Como funciona a consulta online?", "A consulta online acontece por videochamada, com a mesma atenção e privacidade do atendimento presencial. Você recebe as orientações e o plano alimentar por WhatsApp ou e-mail."],
-  // Confirmar com a profissional antes da publicação definitiva.
-  ["Preciso levar exames na primeira consulta?", "Não é obrigatório. Se você tiver exames recentes, traga-os, eles ajudam a avaliar seu quadro. Se não tiver, o atendimento acontece normalmente."],
-  // Confirmar com a profissional antes da publicação definitiva.
-  ["Como funciona o primeiro atendimento?", "O primeiro atendimento é uma conversa completa: história de saúde, rotina, preferências e objetivos. A partir dela, é construído um plano realista, em etapas."],
+  [
+    "Onde acontecem as consultas presenciais?",
+    "Os atendimentos acontecem no Complexo Daer, Av. Pedro Adams Filho, 6000, apto. 701, Centro, Novo Hamburgo/RS, CEP 93510-050.",
+  ],
+  [
+    "Como faço para agendar?",
+    `Clique em qualquer botão de agendamento para conversar diretamente pelo WhatsApp ${site.phoneDisplay}. O atendimento é particular.`,
+  ],
+  [
+    "Atende convênio?",
+    "Não. O atendimento é particular. Pagamento em PIX e dinheiro.",
+  ],
+  [
+    "Quais as formas de pagamento?",
+    "PIX e dinheiro.",
+  ],
+  [
+    "O acompanhamento é personalizado?",
+    "Sim. Cada plano é construído a partir da sua história, rotina, preferências e objetivos — sem dietas extremamente restritivas.",
+  ],
+  [
+    "Como funciona a primeira consulta?",
+    "É uma conversa completa sobre saúde, rotina, preferências e objetivos. A partir dela, construímos estratégias práticas e sustentáveis, em etapas.",
+  ],
+  [
+    "Preciso levar exames na primeira consulta?",
+    "Não é obrigatório. Se você tiver exames recentes, traga-os, eles ajudam na avaliação. Se não tiver, o atendimento acontece normalmente.",
+  ],
+  [
+    "Vocês atendem online?",
+    "No momento o atendimento é presencial em Novo Hamburgo. Chame no WhatsApp para consultar a disponibilidade.",
+  ],
 ] as const;
 
-export const whatsappUrl = `https://wa.me/${site.phoneLink}?text=${encodeURIComponent("Olá, Nutri Sara! Quero mais informações sobre as consultas.")}`;
+export const whatsappUrl = `https://wa.me/${site.phoneLink}?text=${encodeURIComponent("Olá, Camila! Gostaria de agendar uma consulta.")}`;
