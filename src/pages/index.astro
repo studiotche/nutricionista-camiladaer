@@ -312,6 +312,17 @@ const jsonLd = {
           }
         </ol>
       </div>
+      <div class="container">
+        <figure class="pilares-figure image-frame">
+          <img
+            src={asset(site.assets.pilares)}
+            alt="Ilustração de alimentos frescos: legumes, frutas, peixe, grãos e azeite"
+            width="1737"
+            height="905"
+            loading="lazy"
+          />
+        </figure>
+      </div>
     </section>
 
     <section class="section testimonials-section" id="depoimentos">
@@ -401,8 +412,8 @@ const jsonLd = {
             <img
               src={asset(site.assets.about)}
               alt="Nutricionista Camila Daer em ambiente profissional com luz natural"
-              width="1067"
-              height="1600"
+              width="704"
+              height="874"
               loading="lazy"
             />
           </div>
@@ -746,4 +757,24 @@ const jsonLd = {
       }
     });
   });
+
+  const aboutFrame = document.querySelector(".about-frame");
+  if (aboutFrame) {
+    if ("IntersectionObserver" in window) {
+      const aboutObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              aboutFrame.classList.add("in-view");
+              aboutObserver.disconnect();
+            }
+          });
+        },
+        { threshold: 0.25 }
+      );
+      aboutObserver.observe(aboutFrame);
+    } else {
+      aboutFrame.classList.add("in-view");
+    }
+  }
 </script>
