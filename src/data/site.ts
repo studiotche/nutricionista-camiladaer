@@ -18,6 +18,10 @@ export const site = {
     { days: "Domingo e segunda", time: "Fechado" },
   ],
   googleProfile: "https://www.google.com/maps/place/Nutricionista+Sara+Knorst/@-29.5966783,-51.1613002,17z/data=!4m15!1m8!3m7!1s0x951945dcb30cab0b:0x2bcbe6a1b4193e19!2sNutricionista+Sara+Knorst!8m2!3d-29.5966524!4d-51.1615069!10e5!16s%2Fg%2F11v702zfvf!3m5!1s0x951945dcb30cab0b:0x2bcbe6a1b4193e19!8m2!3d-29.5966524!4d-51.1615069!16s%2Fg%2F11v702zfvf?entry=ttu",
+  googleRating: {
+    score: "5,0",
+    reviews: 60,
+  },
   mapsEmbedUrl: "https://maps.google.com/maps?q=-29.5966524,-51.1615069&z=17&hl=pt-BR&output=embed",
   mapsUrl: "https://www.google.com/maps/place/Nutricionista+Sara+Knorst/@-29.5966524,-51.1615069,17z",
   seo: {
