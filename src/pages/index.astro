@@ -623,6 +623,95 @@ const jsonLd = {
     });
   }
 
+  const heroCopy = document.querySelector<HTMLElement>(".hero-copy");
+
+  if (heroCopy) {
+    const heroEyebrow = heroCopy.querySelector<HTMLElement>(".eyebrow");
+    const heroTitle = heroCopy.querySelector<HTMLElement>("h1");
+    const heroTagline = heroCopy.querySelector<HTMLElement>(".hero-tagline");
+    const heroLead = heroCopy.querySelector<HTMLElement>(".lead");
+    const heroActions = heroCopy.querySelector<HTMLElement>(".hero-actions");
+    const heroLocation = heroCopy.querySelector<HTMLElement>(".location-note");
+
+    const splitHeroWords = (element: HTMLElement | null) => {
+      if (!element) return [];
+      const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+      const textNodes: Text[] = [];
+      while (walker.nextNode()) textNodes.push(walker.currentNode as Text);
+
+      const words = textNodes.flatMap((node) => {
+        const isHighlight = node.parentElement?.closest(".highlight") !== null;
+        return (node.textContent || "")
+          .trim()
+          .split(/\s+/)
+          .filter(Boolean)
+          .map((text) => ({ text, isHighlight }));
+      });
+
+      element.replaceChildren();
+      return words.map(({ text, isHighlight }) => {
+        const word = document.createElement("span");
+        word.className = `hero-reveal-word${isHighlight ? " highlight" : ""}`;
+        word.textContent = text;
+        element.append(word, " ");
+        return word;
+      });
+    };
+
+    const scheduleHeroWords = (words: HTMLElement[], startDelay: number) => {
+      let line = 0;
+      let wordInLine = 0;
+      let previousTop: number | null = null;
+
+      words.forEach((word) => {
+        const currentTop = word.offsetTop;
+        if (previousTop !== null && Math.abs(currentTop - previousTop) > 2) {
+          line += 1;
+          wordInLine = 0;
+        }
+        word.style.setProperty(
+          "--hero-delay",
+          `${startDelay + line * 0.1 + wordInLine * 0.025}s`,
+        );
+        wordInLine += 1;
+        previousTop = currentTop;
+      });
+
+      return line + 1;
+    };
+
+    const startHeroReveal = () => {
+      const titleWords = splitHeroWords(heroTitle);
+      const taglineWords = splitHeroWords(heroTagline);
+      const leadWords = splitHeroWords(heroLead);
+      heroCopy.classList.add("hero-reveal-ready");
+
+      const eyebrowDelay = 0.06;
+      const titleDelay = 0.18;
+      const titleLines = scheduleHeroWords(titleWords, titleDelay);
+      const taglineDelay = titleDelay + titleLines * 0.1 + 0.55;
+      const taglineLines = scheduleHeroWords(taglineWords, taglineDelay);
+      const leadDelay = taglineDelay + taglineLines * 0.1 + 0.55;
+      const leadLines = scheduleHeroWords(leadWords, leadDelay);
+      const actionsDelay = leadDelay + leadLines * 0.1 + 0.55;
+      const locationDelay = actionsDelay + 0.62;
+
+      heroEyebrow?.style.setProperty("--hero-delay", `${eyebrowDelay}s`);
+      heroActions?.querySelectorAll<HTMLElement>(":scope > *").forEach((item, index) => {
+        item.style.setProperty(
+          "--hero-delay",
+          `${actionsDelay + index * 0.08}s`,
+        );
+      });
+      heroLocation?.style.setProperty("--hero-delay", `${locationDelay}s`);
+    };
+
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(startHeroReveal);
+    } else {
+      startHeroReveal();
+    }
+  }
   const faqItems =
     document.querySelectorAll<HTMLDetailsElement>(".faq-list details");
   const faqTimeouts = new WeakMap<HTMLDetailsElement, number>();
