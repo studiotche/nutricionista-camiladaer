@@ -34,8 +34,8 @@
   --sage-tint: #a3c0a5;
   --terracotta: #81502a;
   --terracotta-deep: #81502a;
-  --terracotta-light: #d1996f;
-  --gold: #c9b078;
+  --terracotta-light: #e8c39f;
+  --gold: #d8c08a;
   --line: rgba(23, 21, 16, 0.15);
   --white: #ffffff;
   --serif: "Newsreader", Georgia, serif;
@@ -423,13 +423,20 @@ summary:focus-visible {
   color: var(--terracotta);
 }
 
-.hero h1 .highlight,
-.about-copy h2 .highlight {
+.hero h1 .highlight {
   color: var(--terracotta-deep);
 }
 
+.about-copy h2 .highlight {
+  /* Pêssego claro sobre verde-escuro: contraste ~6.4:1 (AA). O terracota
+     escuro (#81502a) sobre #044925 tinha só 1.57:1 e reprovava no Lighthouse. */
+  color: var(--terracotta-light);
+}
+
 .contact-card h2 .highlight {
-  color: var(--sage-tint);
+  /* Creme sobre terracota: contraste ~5.2:1 (AA). O verde-claro anterior
+     (#a3c0a5) tinha só 3.42:1. */
+  color: var(--cream);
 }
 
 .hero-tagline {
