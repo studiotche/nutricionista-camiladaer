@@ -105,8 +105,9 @@ export const pillars = [
 export const testimonials: {
   name: string;
   city: string;
-  dateTime: string;
+  dateTime?: string;
   text: string;
+  profile?: string;
 }[] = [
   {
     name: "Deivis Marcos",
@@ -137,6 +138,12 @@ export const testimonials: {
     city: "Novo Hamburgo/RS",
     dateTime: "2025-11-09",
     text: "Excelente profissional, atenciosa e dedicada, demonstra profundo conhecimento e cuidado em cada orientação nutricional.",
+  },
+  {
+    name: "Natanael Lima",
+    city: "",
+    profile: "https://www.google.com/maps/contrib/107972649020507302522/reviews?hl=pt-BR",
+    text: "Excepcional !!",
   },
 ];
 

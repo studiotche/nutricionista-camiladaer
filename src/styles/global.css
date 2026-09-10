@@ -1903,27 +1903,3 @@ body.menu-open {
     font-size: 1.3rem;
   }
 }
-.testimonial-more-card {
-  justify-content: space-between;
-}
-
-.testimonial-more-card blockquote {
-  max-width: 300px;
-}
-
-.testimonial-more-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin-top: auto;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-  color: var(--sage-dark);
-  font-size: .82rem;
-  font-weight: 600;
-}
-
-.testimonial-more-link span {
-  font-size: 1rem;
-}
