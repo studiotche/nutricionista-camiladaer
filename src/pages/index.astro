@@ -632,6 +632,7 @@ const jsonLd = {
     const heroLead = heroCopy.querySelector<HTMLElement>(".lead");
     const heroActions = heroCopy.querySelector<HTMLElement>(".hero-actions");
     const heroLocation = heroCopy.querySelector<HTMLElement>(".location-note");
+    const heroCard = document.querySelector<HTMLElement>(".floating-card");
 
     const splitHeroWords = (element: HTMLElement | null) => {
       if (!element) return [];
@@ -685,16 +686,17 @@ const jsonLd = {
       const taglineWords = splitHeroWords(heroTagline);
       const leadWords = splitHeroWords(heroLead);
       heroCopy.classList.add("hero-reveal-ready");
+      heroCard?.classList.add("hero-reveal-ready");
 
       const eyebrowDelay = 0.06;
       const titleDelay = 0.18;
       const titleLines = scheduleHeroWords(titleWords, titleDelay);
-      const taglineDelay = titleDelay + titleLines * 0.1 + 0.55;
+      const taglineDelay = titleDelay + titleLines * 0.1 + 0.38;
       const taglineLines = scheduleHeroWords(taglineWords, taglineDelay);
-      const leadDelay = taglineDelay + taglineLines * 0.1 + 0.55;
+      const leadDelay = taglineDelay + taglineLines * 0.1 + 0.38;
       const leadLines = scheduleHeroWords(leadWords, leadDelay);
-      const actionsDelay = leadDelay + leadLines * 0.1 + 0.55;
-      const locationDelay = actionsDelay + 0.62;
+      const actionsDelay = leadDelay + leadLines * 0.1 + 0.38;
+      const locationDelay = actionsDelay + 0.45;
 
       heroEyebrow?.style.setProperty("--hero-delay", `${eyebrowDelay}s`);
       heroActions?.querySelectorAll<HTMLElement>(":scope > *").forEach((item, index) => {
@@ -704,6 +706,7 @@ const jsonLd = {
         );
       });
       heroLocation?.style.setProperty("--hero-delay", `${locationDelay}s`);
+      heroCard?.style.setProperty("--hero-delay", `${locationDelay}s`);
     };
 
     if (document.fonts?.ready) {

@@ -359,6 +359,12 @@ summary:focus-visible {
   animation-delay: var(--hero-delay, 0s);
 }
 
+.floating-card.hero-reveal-ready {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: hero-line-rise .58s cubic-bezier(.22, .61, .36, 1) both;
+  animation-delay: var(--hero-delay, 0s);
+}
 @keyframes hero-line-rise {
   from {
     opacity: 0;
