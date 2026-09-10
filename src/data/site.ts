@@ -104,42 +104,36 @@ export const pillars = [
 // Extração em 09/09/2026. Datas aproximadas a partir de "X meses atrás" — dia 09 usado como referência.
 export const testimonials: {
   name: string;
-  initials: string;
   city: string;
   dateTime: string;
   text: string;
 }[] = [
   {
     name: "Deivis Marcos",
-    initials: "DM",
     city: "Novo Hamburgo/RS",
     dateTime: "2026-06-09",
     text: "Ótimo atendimento, superou todas minhas espectativas super recomendo❤️",
   },
   {
     name: "Thiago Daer",
-    initials: "TD",
     city: "Novo Hamburgo/RS",
     dateTime: "2026-05-09",
     text: "Posso dizer com total convicção que exerce a profissão com amor, responsabilidade e muito conhecimento. Cada atendimento é feito com atenção aos detalhes, buscando sempre entender o que realmente o paciente precisa, não apenas na alimentação, mas no estilo de vida como um todo.",
   },
   {
     name: "Silvia Sternberg",
-    initials: "SS",
     city: "Novo Hamburgo/RS",
     dateTime: "2025-11-09",
     text: "O atendimento da Camila foi excepcional! De uma atenção maravilhosa, teve empatia, foi atenciosa e com tudo isso associado ao profissionalismo dela com certeza vai refletir no resultado final que procuro!",
   },
   {
     name: "Cíntia Rodrigues",
-    initials: "CR",
     city: "Novo Hamburgo/RS",
     dateTime: "2025-11-09",
     text: "A nutri Camila, está fazendo eu enxergar de uma forma diferente “a dieta”, ou melhor, a reeducação alimentar! Sempre tive dificuldades e ela está me mostrando que não adianta fazer uma reeducação alimentar restritiva ou com extremismos e sim um momento de apreciar a comida de verdade, com trocas, com adaptações! Estou muito satisfeita, vai ter resultado muito bom!",
   },
   {
     name: "Marcelo Andrade",
-    initials: "MA",
     city: "Novo Hamburgo/RS",
     dateTime: "2025-11-09",
     text: "Excelente profissional, atenciosa e dedicada, demonstra profundo conhecimento e cuidado em cada orientação nutricional.",
