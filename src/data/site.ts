@@ -106,7 +106,6 @@ export const testimonials: {
   name: string;
   initials: string;
   city: string;
-  date: string;
   dateTime: string;
   text: string;
 }[] = [
@@ -114,7 +113,6 @@ export const testimonials: {
     name: "Deivis Marcos",
     initials: "DM",
     city: "Novo Hamburgo/RS",
-    date: "09/06/2026",
     dateTime: "2026-06-09",
     text: "Ótimo atendimento, superou todas minhas espectativas super recomendo❤️",
   },
@@ -122,7 +120,6 @@ export const testimonials: {
     name: "Thiago Daer",
     initials: "TD",
     city: "Novo Hamburgo/RS",
-    date: "09/05/2026",
     dateTime: "2026-05-09",
     text: "Posso dizer com total convicção que exerce a profissão com amor, responsabilidade e muito conhecimento. Cada atendimento é feito com atenção aos detalhes, buscando sempre entender o que realmente o paciente precisa, não apenas na alimentação, mas no estilo de vida como um todo.",
   },
@@ -130,7 +127,6 @@ export const testimonials: {
     name: "Silvia Sternberg",
     initials: "SS",
     city: "Novo Hamburgo/RS",
-    date: "09/11/2025",
     dateTime: "2025-11-09",
     text: "O atendimento da Camila foi excepcional! De uma atenção maravilhosa, teve empatia, foi atenciosa e com tudo isso associado ao profissionalismo dela com certeza vai refletir no resultado final que procuro!",
   },
@@ -138,7 +134,6 @@ export const testimonials: {
     name: "Cíntia Rodrigues",
     initials: "CR",
     city: "Novo Hamburgo/RS",
-    date: "09/11/2025",
     dateTime: "2025-11-09",
     text: "A nutri Camila, está fazendo eu enxergar de uma forma diferente “a dieta”, ou melhor, a reeducação alimentar! Sempre tive dificuldades e ela está me mostrando que não adianta fazer uma reeducação alimentar restritiva ou com extremismos e sim um momento de apreciar a comida de verdade, com trocas, com adaptações! Estou muito satisfeita, vai ter resultado muito bom!",
   },
@@ -146,7 +141,6 @@ export const testimonials: {
     name: "Marcelo Andrade",
     initials: "MA",
     city: "Novo Hamburgo/RS",
-    date: "09/11/2025",
     dateTime: "2025-11-09",
     text: "Excelente profissional, atenciosa e dedicada, demonstra profundo conhecimento e cuidado em cada orientação nutricional.",
   },
