@@ -58,6 +58,8 @@ export const site = {
     heroMobile: "/images/camila_daer.webp",
     about: "/images/camila_daer_nutricionista_sobre.webp",
     processBg: "/images/nutricionista.webp",
+    consultorio: "/imagens/camila-daer-consultorio.webp",
+    consultorioFachada: "/imagens/camila-daer-fachada-dia.webp",
   },
 } as const;
 
