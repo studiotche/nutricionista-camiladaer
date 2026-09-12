@@ -1446,7 +1446,7 @@ summary:focus-visible {
   bottom: 2px;
   width: 0;
   height: 1px;
-  background: var(--terracotta);
+  background: var(--white);
   transition: width .3s cubic-bezier(.22, .61, .36, 1);
 }
 
