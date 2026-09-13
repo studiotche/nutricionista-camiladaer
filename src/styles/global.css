@@ -345,24 +345,18 @@ summary:focus-visible {
 .hero-copy.hero-reveal-ready > .eyebrow,
 .hero-copy.hero-reveal-ready > .location-note,
 .hero-copy.hero-reveal-ready .hero-actions > * {
-  opacity: 0;
-  transform: translateY(18px);
-  animation: hero-line-rise .58s cubic-bezier(.22, .61, .36, 1) both;
+  animation: hero-line-rise .45s cubic-bezier(.22, .61, .36, 1) backwards;
   animation-delay: var(--hero-delay, 0s);
 }
 
 .hero-copy.hero-reveal-ready .hero-reveal-word {
   display: inline-block;
-  opacity: 0;
-  transform: translateY(16px);
-  animation: hero-line-rise .54s cubic-bezier(.22, .61, .36, 1) both;
+  animation: hero-line-rise .42s cubic-bezier(.22, .61, .36, 1) backwards;
   animation-delay: var(--hero-delay, 0s);
 }
 
 .floating-card.hero-reveal-ready {
-  opacity: 0;
-  transform: translateY(18px);
-  animation: hero-line-rise .58s cubic-bezier(.22, .61, .36, 1) both;
+  animation: hero-line-rise .45s cubic-bezier(.22, .61, .36, 1) backwards;
   animation-delay: var(--hero-delay, 0s);
 }
 @keyframes hero-line-rise {
@@ -464,10 +458,6 @@ summary:focus-visible {
 .hero .button:hover {
   background: var(--sage);
   border-color: var(--sage);
-}
-.hero-copy.hero-reveal-ready .hero-actions > .button:hover {
-  opacity: 1 !important;
-  transform: translateY(-3px) !important;
 }
 
 .hero-actions {
