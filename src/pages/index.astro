@@ -242,24 +242,29 @@ const jsonLd = {
           {
             specialties.map((specialty) => (
               <article class="service-card">
-                <>
+                <div class="service-card-top">
+                  <img
+                    class="service-icon"
+                    src={asset(specialty.icon)}
+                    alt=""
+                    width="56"
+                    height="56"
+                  />
                   <span class="service-number">{specialty.number}</span>
-                  <div>
-                    <>
-                      <h3>{specialty.title}</h3>
-                      <p>{specialty.text}</p>
-                      <p>{specialty.detail}</p>
-                    </>
-                  </div>
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Saber mais sobre ${specialty.title.toLowerCase()}`}
-                  >
-                    Saber mais <span aria-hidden="true">↗</span>
-                  </a>
-                </>
+                </div>
+                <div class="service-card-body">
+                  <h3>{specialty.title}</h3>
+                  <p>{specialty.text}</p>
+                </div>
+                <a
+                  class="service-card-link"
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Saber mais sobre ${specialty.title.toLowerCase()}`}
+                >
+                  Saiba mais <span aria-hidden="true">→</span>
+                </a>
               </article>
             ))
           }
@@ -295,17 +300,22 @@ const jsonLd = {
         </div>
         <ol class="steps-list">
           {
-            pillars.map(([title, text], index) => (
-              <li>
-                <>
-                  <span>0{index + 1}</span>
-                  <div>
-                    <>
-                      <h3>{title}</h3>
-                      <p>{text}</p>
-                    </>
-                  </div>
-                </>
+            pillars.map((pillar) => (
+              <li class="step-item">
+                <div class="step-icon-badge" aria-hidden="true">
+                  <img
+                    class="step-icon"
+                    src={asset(pillar.icon)}
+                    alt=""
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="step-content">
+                  <h3>{pillar.title}</h3>
+                  <p>{pillar.text}</p>
+                </div>
               </li>
             ))
           }
@@ -568,14 +578,7 @@ const jsonLd = {
           <p>
             <span>Modalidade</span><strong>Presencial · Particular</strong>
           </p><p>
-            <span>Pagamento</span><strong>PIX e dinheiro</strong>
-          </p><p>
             <span>WhatsApp</span><strong>{site.phoneDisplay}</strong>
-          </p><p>
-            <span>Telefone</span><strong
-              ><a class="contact-tel" href={site.telLink}>{site.phoneDisplay}</a
-              ></strong
-            >
           </p><a
             class="button button-light"
             href={whatsappUrl}

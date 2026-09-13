@@ -66,40 +66,46 @@ export const site = {
 export const specialties = [
   {
     number: "01",
-    title: "Emagrecimento",
-    text: "Estratégias práticas e sustentáveis para emagrecer sem restrições extremas, respeitando sua rotina e seu paladar.",
+    icon: "/images/corrida.svg",
+    title: "Nutri\u00e7\u00e3o esportiva",
+    text: "Estrat\u00e9gias para apoiar seus treinos, sua recupera\u00e7\u00e3o e seu desempenho, sempre de acordo com sua rotina.",
     detail:
-      "Avaliação completa, metas realistas e ajustes ao longo do acompanhamento, com comida de verdade e sem culpa.",
+      "Planejamento individualizado para quem busca mais energia, consist\u00eancia e performance no esporte.",
   },
   {
     number: "02",
-    title: "Menopausa e saúde da mulher",
-    text: "Cuidado nutricional para mulheres em diferentes fases, com atenção a sintomas, energia e qualidade de vida na menopausa.",
+    icon: "/images/maca.svg",
+    title: "Nutri\u00e7\u00e3o est\u00e9tica",
+    text: "Acompanhamento para melhorar a composi\u00e7\u00e3o corporal com metas realistas e uma alimenta\u00e7\u00e3o poss\u00edvel de sustentar.",
     detail:
-      "Plano individualizado que considera histórico, exames e rotina, unindo nutrição e gastronomia para mais bem-estar.",
+      "O plano considera seus objetivos, prefer\u00eancias alimentares, composi\u00e7\u00e3o corporal e exames laboratoriais.",
   },
   {
     number: "03",
-    title: "Bem-estar e saúde intestinal",
-    text: "Organização da rotina alimentar para mais disposição, leveza e equilíbrio, incluindo atenção à saúde intestinal.",
+    icon: "/images/crescimento-de-lucro.svg",
+    title: "Emagrecimento",
+    text: "Orienta\u00e7\u00e3o individualizada para reduzir gordura sem dietas imposs\u00edveis de manter ou estrat\u00e9gias extremas.",
     detail:
-      "Orientações práticas e possíveis, com trocas e adaptações que você consegue manter no dia a dia.",
+      "Mudan\u00e7as pr\u00e1ticas e graduais para construir uma rela\u00e7\u00e3o mais equilibrada com a alimenta\u00e7\u00e3o no longo prazo.",
   },
 ] as const;
 
 export const pillars = [
-  [
-    "Conhecer",
-    "Escuta atenta da sua história, rotina, preferências e objetivos para entender o que faz sentido para você.",
-  ],
-  [
-    "Planejar",
-    "Plano individualizado e prático, sem dietas extremamente restritivas, com estratégias que cabem na vida real.",
-  ],
-  [
-    "Acompanhar",
-    "Ajustes contínuos e apoio próximo para evoluir com constância, sem culpa e com mais prazer ao comer.",
-  ],
+  {
+    title: "Avaliar",
+    text: "Entender sua história, seus hábitos, preferências e objetivos com uma avaliação completa e individualizada.",
+    icon: "/images/pagina.svg",
+  },
+  {
+    title: "Planejar",
+    text: "Criar um plano alimentar realista, ajustado à sua rotina e às suas necessidades, com base em evidências.",
+    icon: "/images/alvo.svg",
+  },
+  {
+    title: "Acompanhar",
+    text: "Estar ao seu lado em todas as etapas, com suporte contínuo para ajustes e melhores resultados.",
+    icon: "/images/pessoas.svg",
+  },
 ] as const;
 
 // Depoimentos reais coletados do Google (perfil: 5,0 estrelas · 10 avaliações).

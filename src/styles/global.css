@@ -465,6 +465,10 @@ summary:focus-visible {
   background: var(--sage);
   border-color: var(--sage);
 }
+.hero-copy.hero-reveal-ready .hero-actions > .button:hover {
+  animation: none;
+  transform: translateY(-3px);
+}
 
 .hero-actions {
   display: flex;
@@ -606,11 +610,13 @@ summary:focus-visible {
   inset: 30px auto -26px 0;
   width: 74%;
   border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 4px;
 }
 
 .about-frame {
   position: relative;
   aspect-ratio: 4 / 5;
+  border-radius: 4px;
   box-shadow: var(--shadow);
 }
 
@@ -735,60 +741,80 @@ summary:focus-visible {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--line);
-  border-inline: 1px solid var(--line);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
 }
 
 .service-card {
-  min-height: 390px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 34px 35px 30px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  padding: 32px 34px 30px;
+  border: 1px solid rgba(23, 21, 16, .11);
   border-radius: 4px;
+  background: var(--paper);
 }
 
-.service-card:nth-child(3n) {
-  border-right: 0;
+.service-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
-.service-card:last-child {
-  border-right: 0;
+.service-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: invert(25%) sepia(22%) saturate(1100%) hue-rotate(96deg) brightness(80%) contrast(100%);
 }
 
 .service-number {
-  color: var(--terracotta-deep);
-  font-family: var(--serif);
-  font-size: 1.35rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.service-card-body {
+  flex: 1;
 }
 
 .service-card h3 {
   margin: 0 0 16px;
   font-family: var(--serif);
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
   line-height: 1.1;
 }
 
 .service-card p {
+  margin: 0;
   color: var(--muted);
+  line-height: 1.65;
 }
 
-.service-card a {
+.service-card-link {
   width: fit-content;
-  padding-bottom: 5px;
-  border-bottom: 1px solid var(--line);
-  font-size: .87rem;
+  padding: 0;
+  color: var(--sage-dark);
+  font-size: .9rem;
   font-weight: 600;
-  transition: color .28s ease, border-color .28s ease;
+  transition: color .28s ease;
 }
 
-.service-card a:hover {
-  color: var(--sage-dark);
-  border-color: var(--sage-dark);
+.service-card-link span {
+  display: inline-block;
+  margin-left: 7px;
+  transition: transform .28s cubic-bezier(.22, .61, .36, 1);
+}
+
+.service-card-link:hover {
+  color: var(--sage);
+}
+
+.service-card-link:hover span {
+  transform: translateX(4px);
 }
 
 .process-section {
@@ -833,34 +859,62 @@ summary:focus-visible {
   padding: 0;
 }
 
-.steps-list li {
-  display: grid;
-  grid-template-columns: 62px 1fr;
-  gap: 24px;
-  padding: 34px 0;
-  border-top: 1px solid rgba(23, 21, 16, .2);
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.steps-list li:last-child {
-  border-bottom: 1px solid rgba(23, 21, 16, .2);
+.step-item:last-child {
+  border-bottom: none;
 }
 
-.steps-list>li>span {
-  color: var(--terracotta);
+.step-icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--paper);
+  flex-shrink: 0;
+  transition: transform .25s ease;
+}
+
+.step-item:hover .step-icon-badge {
+  transform: scale(1.04);
+}
+
+.step-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.step-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.step-content h3 {
+  margin: 0 0 6px;
   font-family: var(--serif);
-  font-size: 1.15rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--sage-dark);
+  line-height: 1.2;
 }
 
-.steps-list h3 {
-  margin: 0 0 7px;
-  font-family: var(--serif);
-  font-size: 1.7rem;
-  font-weight: 400;
-}
-
-.steps-list p {
+.step-content p {
   margin: 0;
   color: var(--muted);
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  line-height: 1.55;
 }
 
 .testimonials-section {
@@ -940,7 +994,7 @@ summary:focus-visible {
   flex-direction: column;
   margin: 0;
   padding: 22px 24px 20px;
-  background: var(--paper);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 4px;
 }
@@ -1262,7 +1316,11 @@ summary:focus-visible {
   grid-template-columns: 1.1fr .7fr;
   gap: 80px;
   align-items: center;
-  background: var(--terracotta-deep);
+  background-color: var(--terracotta-deep);
+  background-image: linear-gradient(rgba(129, 80, 42, .9), rgba(129, 80, 42, .9)), url('/images/nutricionista-fundo-sessao-agende.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 4px;
   color: var(--white);
   padding: clamp(46px, 7vw, 86px);
@@ -1923,22 +1981,31 @@ body.menu-open {
   }
 
   .service-card {
-    min-height: 315px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    min-height: 330px;
   }
 
   .service-card:last-child {
     grid-column: auto;
-    min-height: 315px;
+    min-height: 330px;
   }
 
   .process-intro {
     position: static;
   }
 
-  .process-section {
-    display: none;
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .step-item {
+    gap: 20px;
+    padding: 24px 0;
+  }
+
+  .step-icon-badge {
+    width: 62px;
+    height: 62px;
   }
 
   .testimonial-grid {
@@ -2082,9 +2149,19 @@ body.menu-open {
     grid-template-columns: 1fr;
   }
 
-  .steps-list li {
-    grid-template-columns: 45px 1fr;
-    gap: 13px;
+  .step-item {
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  .step-icon-badge {
+    width: 52px;
+    height: 52px;
+  }
+
+  .step-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .section h2,
@@ -2097,7 +2174,7 @@ body.menu-open {
     font-size: 1.45rem;
   }
 
-  .steps-list h3 {
+  .step-content h3 {
     font-size: 1.3rem;
   }
 }
