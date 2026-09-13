@@ -67,26 +67,26 @@ export const specialties = [
   {
     number: "01",
     icon: "/images/corrida.svg",
-    title: "Nutri\u00e7\u00e3o esportiva",
-    text: "Estrat\u00e9gias para apoiar seus treinos, sua recupera\u00e7\u00e3o e seu desempenho, sempre de acordo com sua rotina.",
+    title: "Emagrecimento",
+    text: "Estrat\u00e9gias pr\u00e1ticas e sustent\u00e1veis para emagrecer sem restri\u00e7\u00f5es extremas, respeitando sua rotina e seu paladar.",
     detail:
-      "Planejamento individualizado para quem busca mais energia, consist\u00eancia e performance no esporte.",
+      "Avalia\u00e7\u00e3o completa, metas realistas e ajustes ao longo do acompanhamento, com comida de verdade e sem culpa.",
   },
   {
     number: "02",
     icon: "/images/maca.svg",
-    title: "Nutri\u00e7\u00e3o est\u00e9tica",
-    text: "Acompanhamento para melhorar a composi\u00e7\u00e3o corporal com metas realistas e uma alimenta\u00e7\u00e3o poss\u00edvel de sustentar.",
+    title: "Menopausa e sa\u00fade da mulher",
+    text: "Cuidado nutricional para mulheres em diferentes fases, com aten\u00e7\u00e3o a sintomas, energia e qualidade de vida na menopausa.",
     detail:
-      "O plano considera seus objetivos, prefer\u00eancias alimentares, composi\u00e7\u00e3o corporal e exames laboratoriais.",
+      "Plano individualizado que considera hist\u00f3rico, exames e rotina, unindo nutri\u00e7\u00e3o e gastronomia para mais bem-estar.",
   },
   {
     number: "03",
     icon: "/images/crescimento-de-lucro.svg",
-    title: "Emagrecimento",
-    text: "Orienta\u00e7\u00e3o individualizada para reduzir gordura sem dietas imposs\u00edveis de manter ou estrat\u00e9gias extremas.",
+    title: "Bem-estar e sa\u00fade intestinal",
+    text: "Organiza\u00e7\u00e3o da rotina alimentar para mais disposi\u00e7\u00e3o, leveza e equil\u00edbrio, incluindo aten\u00e7\u00e3o \u00e0 sa\u00fade intestinal.",
     detail:
-      "Mudan\u00e7as pr\u00e1ticas e graduais para construir uma rela\u00e7\u00e3o mais equilibrada com a alimenta\u00e7\u00e3o no longo prazo.",
+      "Orienta\u00e7\u00f5es pr\u00e1ticas e poss\u00edveis, com trocas e adapta\u00e7\u00f5es que voc\u00ea consegue manter no dia a dia.",
   },
 ] as const;
 
