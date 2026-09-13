@@ -467,6 +467,7 @@ summary:focus-visible {
 }
 .hero-copy.hero-reveal-ready .hero-actions > .button:hover {
   animation: none;
+  opacity: 1;
   transform: translateY(-3px);
 }
 
