@@ -466,9 +466,8 @@ summary:focus-visible {
   border-color: var(--sage);
 }
 .hero-copy.hero-reveal-ready .hero-actions > .button:hover {
-  animation: none;
-  opacity: 1;
-  transform: translateY(-3px);
+  opacity: 1 !important;
+  transform: translateY(-3px) !important;
 }
 
 .hero-actions {
