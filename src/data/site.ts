@@ -66,7 +66,7 @@ export const site = {
 export const specialties = [
   {
     number: "01",
-    icon: "/images/corrida.svg",
+    icon: "/images/emagrecimento.svg",
     title: "Emagrecimento",
     text: "Estrat\u00e9gias pr\u00e1ticas e sustent\u00e1veis para emagrecer sem restri\u00e7\u00f5es extremas, respeitando sua rotina e seu paladar.",
     detail:
@@ -74,7 +74,7 @@ export const specialties = [
   },
   {
     number: "02",
-    icon: "/images/maca.svg",
+    icon: "/images/menopausa.svg",
     title: "Menopausa e sa\u00fade da mulher",
     text: "Cuidado nutricional para mulheres em diferentes fases, com aten\u00e7\u00e3o a sintomas, energia e qualidade de vida na menopausa.",
     detail:
