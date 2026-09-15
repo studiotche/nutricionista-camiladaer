@@ -32,7 +32,7 @@ export const site = {
     description:
       "Camila Daer, nutricionista e gastróloga em Novo Hamburgo/RS. Nutrição personalizada para mulheres, menopausa, emagrecimento e bem-estar, sem restrições extremas. Agende pelo WhatsApp.",
     url: "https://studiotche.github.io/nutricionista-camiladaer/",
-    ogImage: "/images/camila_daer_nutricionista.webp",
+    ogImage: "/images/camila-daer-nutricionista.webp",
   },
   hero: {
     eyebrow: "Nutrição para mulheres",
@@ -54,7 +54,7 @@ export const site = {
   },
   assets: {
     logo: "/imagens/logo-camiladaer.svg",
-    hero: "/images/camila_daer_nutricionista.webp",
+    hero: "/images/camila-daer-nutricionista.webp",
     heroMobile: "/images/camila_daer.webp",
     about: "/images/camila_daer_nutricionista_sobre.webp",
     processBg: "/images/nutricionista.webp",
